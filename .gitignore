@@ -1,0 +1,10 @@
+# NODE
+node_modules
+
+# BUILD
+**/__*/*
+.static
+
+# LOCAL
+.env*
+!.env-sample
