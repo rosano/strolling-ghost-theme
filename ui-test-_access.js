@@ -1,4 +1,4 @@
-const kDefaultRoute = '/';
+const kDefaultRoutePath = '/';
 
 Object.entries({
 	STRVitrine: '.STRVitrine',
@@ -9,11 +9,15 @@ Object.entries({
 describe('STRVitrine_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoute);
+		return browser.visit(kDefaultRoutePath);
 	});
 	
 	it('shows STRVitrine', function() {
 		browser.assert.elements(STRVitrine, 1);
+	});
+	
+	it('shows STRHeader', function() {
+		browser.assert.elements(STRHeader, 1);
 	});
 
 });
