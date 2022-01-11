@@ -11,6 +11,14 @@ describe('STRHeader_Misc', function () {
 		it('sets href', function () {
 			browser.assert.attribute(STRHeaderLink, 'href', '/');
 		});
+
+		it('classes OLSKCommonCard', function () {
+			browser.assert.hasClass(STRHeaderLink, 'OLSKCommonCard');
+		});
+
+		it('classes OLSKCommonCrownCard', function () {
+			browser.assert.hasClass(STRHeaderLink, 'OLSKCommonCrownCard');
+		});
 	
 	});
 
