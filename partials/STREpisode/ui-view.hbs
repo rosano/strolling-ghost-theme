@@ -1,0 +1,25 @@
+{{#post}}
+
+<div class="STREpisode">
+
+<p>
+	<a class="STREpisodeAll" href="/">← All episodes</a>
+</p>
+
+<span class="STREpisodeMeta">
+	<span class="STREpisodeMetaNumber">{{@site.title}} Episode {{slug}}</span>
+	&emdash;
+	<time class="STREpisodeMetaDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
+</span>
+
+<p>
+	<a class="STREpisodeTitle" href="{{url}}">{{title}}</a>
+</p>
+
+<article class="STREpisodeContent">{{content}}</article>
+
+</div>
+
+{{> STRIntro/ui-view}}
+
+{{/post}}
