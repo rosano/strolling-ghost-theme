@@ -33,7 +33,7 @@ describe('STRHeader_Misc', function () {
 	describe('STRHeaderCrownTitle', function test_STRHeaderCrownTitle () {
 
 		it('sets text', function () {
-			browser.assert.text(STRHeaderCrownTitle, 'Strolling');
+			browser.assert.text(STRHeaderCrownTitle, 'STRTitleText');
 		});
 	
 	});

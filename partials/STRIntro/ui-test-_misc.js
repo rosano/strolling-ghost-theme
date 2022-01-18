@@ -21,7 +21,7 @@ describe('STRIntro_Misc', function () {
 	describe('STRIntroBlurb', function test_STRIntroBlurb () {
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroBlurb, 'Conversations with people I meet along the way.');
+			browser.assert.text(STRIntroBlurb, 'STRDescriptionText');
 		});
 	
 	});
