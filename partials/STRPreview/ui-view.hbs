@@ -1,0 +1,17 @@
+{{#foreach posts visibility="all"}}
+
+<div class="STRPreview OLSKCommonCard">
+
+<span class="STRPreviewNumber">{{slug}}</span>
+
+<section>
+	<time class="STRPreviewDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
+	<a class="STRPreviewTitle" href="{{url}}">{{title}}</a>
+	<p>
+		<a class="STRPreviewNotes" href="{{url}}">→ Episode notes</a>
+	</p>
+</section>
+
+</div>
+
+{{/foreach}}
