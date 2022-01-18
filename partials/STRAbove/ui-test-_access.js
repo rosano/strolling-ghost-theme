@@ -6,7 +6,7 @@ Object.entries({
 	STRAboveCrownImage: '.STRAboveCrownImage',
 	STRAboveCrownTitle: '.STRAboveCrownTitle',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('STRAbove_Access', function () {

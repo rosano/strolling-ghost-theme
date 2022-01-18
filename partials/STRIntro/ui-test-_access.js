@@ -5,7 +5,7 @@ Object.entries({
 	STRIntroBlurb: '.STRIntroBlurb',
 	STRIntroFeed: '.STRIntroFeed',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('STRIntro_Access', function () {

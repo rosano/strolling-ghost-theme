@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 Object.entries({
 	STRBelow: '.STRBelow',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('STRBelow_Access', function () {

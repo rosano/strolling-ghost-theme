@@ -9,7 +9,7 @@ Object.entries({
 	STREpisodeTitle: '.STREpisodeTitle',
 	STREpisodeContent: '.STREpisodeContent',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('STREpisode_Access', function () {

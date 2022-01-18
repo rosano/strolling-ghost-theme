@@ -7,7 +7,7 @@ Object.entries({
 	STRPreviewTitle: '.STRPreviewTitle',
 	STRPreviewNotes: '.STRPreviewNotes',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('STRPreview_Access', function () {

@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 Object.entries({
 	STRVitrine: '.STRVitrine',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('STRVitrine_Access', function () {
