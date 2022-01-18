@@ -3,9 +3,10 @@ const kDefaultRoutePath = '/';
 Object.entries({
 	STRIntro: '.STRIntro',
 	STRIntroBlurb: '.STRIntroBlurb',
-	STRIntroPocketCasts: '.STRIntroPocketCasts',
-	STRIntroSpotify: '.STRIntroSpotify',
-	STRIntroFeed: '.STRIntroFeed',
+	STRIntroPlatforms: '.STRIntroPlatforms',
+	STRIntroPlatformsPocketCasts: '.STRIntroPlatformsPocketCasts',
+	STRIntroPlatformsSpotify: '.STRIntroPlatformsSpotify',
+	STRIntroPlatformsFeed: '.STRIntroPlatformsFeed',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -23,17 +24,21 @@ describe('STRIntro_Access', function () {
 	it('shows STRIntroBlurb', function() {
 		browser.assert.elements(STRIntroBlurb, 1);
 	});
-	
-	it('shows STRIntroPocketCasts', function() {
-		browser.assert.elements(STRIntroPocketCasts, 1);
+
+	it('shows STRIntroPlatforms', function () {
+		browser.assert.elements(STRIntroPlatforms, 1);
 	});
 	
-	it('shows STRIntroSpotify', function() {
-		browser.assert.elements(STRIntroSpotify, 1);
+	it('shows STRIntroPlatformsPocketCasts', function() {
+		browser.assert.elements(STRIntroPlatformsPocketCasts, 1);
 	});
 	
-	it('shows STRIntroFeed', function() {
-		browser.assert.elements(STRIntroFeed, 1);
+	it('shows STRIntroPlatformsSpotify', function() {
+		browser.assert.elements(STRIntroPlatformsSpotify, 1);
+	});
+	
+	it('shows STRIntroPlatformsFeed', function() {
+		browser.assert.elements(STRIntroPlatformsFeed, 1);
 	});
 	
 });

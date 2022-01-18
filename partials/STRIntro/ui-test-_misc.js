@@ -26,38 +26,38 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
-	describe('STRIntroPocketCasts', function test_STRIntroPocketCasts () {
+	describe('STRIntroPlatformsPocketCasts', function test_STRIntroPlatformsPocketCasts () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroPocketCasts, 'href', '/pcast');
+			browser.assert.attribute(STRIntroPlatformsPocketCasts, 'href', '/pcast');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroPocketCasts, 'Pocket Casts');
+			browser.assert.text(STRIntroPlatformsPocketCasts, 'Pocket Casts');
 		});
 	
 	});
 
-	describe('STRIntroSpotify', function test_STRIntroSpotify () {
+	describe('STRIntroPlatformsSpotify', function test_STRIntroPlatformsSpotify () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroSpotify, 'href', '/spotify');
+			browser.assert.attribute(STRIntroPlatformsSpotify, 'href', '/spotify');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroSpotify, 'Spotify');
+			browser.assert.text(STRIntroPlatformsSpotify, 'Spotify');
 		});
 	
 	});
 
-	describe('STRIntroFeed', function test_STRIntroFeed () {
+	describe('STRIntroPlatformsFeed', function test_STRIntroPlatformsFeed () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroFeed, 'href', '/podcast.rss');
+			browser.assert.attribute(STRIntroPlatformsFeed, 'href', '/podcast.rss');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroFeed, 'RSS Feed');
+			browser.assert.text(STRIntroPlatformsFeed, 'RSS Feed');
 		});
 	
 	});
