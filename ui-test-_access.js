@@ -16,8 +16,8 @@ describe('STRVitrine_Access', function () {
 		browser.assert.elements(STRVitrine, 1);
 	});
 	
-	it('shows STRHeader', function() {
-		browser.assert.elements(STRHeader, 1);
+	it('shows STRAbove', function() {
+		browser.assert.elements(STRAbove, 1);
 	});
 
 });
