@@ -3,6 +3,7 @@ const kDefaultRoutePath = '/';
 Object.entries({
 	STRIntro: '.STRIntro',
 	STRIntroBlurb: '.STRIntroBlurb',
+	STRIntroFeed: '.STRIntroFeed',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
@@ -19,6 +20,10 @@ describe('STRIntro_Access', function () {
 	
 	it('shows STRIntroBlurb', function() {
 		browser.assert.elements(STRIntroBlurb, 1);
+	});
+	
+	it('shows STRIntroFeed', function() {
+		browser.assert.elements(STRIntroFeed, 1);
 	});
 	
 });

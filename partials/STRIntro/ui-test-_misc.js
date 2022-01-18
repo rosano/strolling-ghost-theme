@@ -26,4 +26,16 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
+	describe('STRIntroFeed', function test_STRIntroFeed () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroFeed, 'href', '/podcast.rss');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroFeed, 'RSS Feed');
+		});
+	
+	});
+
 });
