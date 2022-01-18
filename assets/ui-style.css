@@ -12,3 +12,7 @@ a {
 
 	text-decoration: none;
 }
+
+.STRIntroPlatforms a {
+	margin-right: 4px;
+}
