@@ -1,3 +1,12 @@
+:root {
+	--OLSKCommonBackground: #32254E;
+	--OLSKCommonForeground: #FFE8F9;
+}
+
+a {
+	color: #E56A9B !important;
+}
+
 .STRAboveCrown {
 	color: inherit;
 
