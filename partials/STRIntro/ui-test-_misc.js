@@ -26,6 +26,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
+	describe('STRIntroPocketCasts', function test_STRIntroPocketCasts () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPocketCasts, 'href', '/pcast');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPocketCasts, 'Pocket Casts');
+		});
+	
+	});
+
 	describe('STRIntroFeed', function test_STRIntroFeed () {
 
 		it('sets href', function () {
