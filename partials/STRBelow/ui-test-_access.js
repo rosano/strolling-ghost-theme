@@ -19,5 +19,9 @@ describe('STRBelow_Access', function () {
 	it('shows ROCOGazette', function() {
 		browser.assert.elements('.ROCOGazette', 1);
 	});
+	
+	it('shows ROCORootLink', function() {
+		browser.assert.elements('.ROCORootLink', 1);
+	});
 
 });
