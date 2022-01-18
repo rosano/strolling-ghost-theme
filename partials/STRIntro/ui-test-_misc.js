@@ -38,6 +38,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
+	describe('STRIntroSpotify', function test_STRIntroSpotify () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroSpotify, 'href', '/spotify');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroSpotify, 'Spotify');
+		});
+	
+	});
+
 	describe('STRIntroFeed', function test_STRIntroFeed () {
 
 		it('sets href', function () {
