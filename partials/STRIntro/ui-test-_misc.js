@@ -38,6 +38,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
+	describe('STRIntroPlatformsApplePodcasts', function test_STRIntroPlatformsApplePodcasts () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsApplePodcasts, 'href', '/apple');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsApplePodcasts, 'Apple Podcasts');
+		});
+	
+	});
+
 	describe('STRIntroPlatformsSpotify', function test_STRIntroPlatformsSpotify () {
 
 		it('sets href', function () {
