@@ -43,3 +43,7 @@ a {
 .STRPreviewTitle {
 	font-size: 28px;
 }
+
+.STRPreviewMeta, .STRPreviewTitle, .STRPreviewNotes {
+	display: none;
+}
