@@ -29,21 +29,25 @@ a {
 	align-items: flex-start;
 }
 
-.STRPreview a {
+.STRPreview a, .STREpisode a {
 	text-decoration: none;
 }
 
-.STRPreviewMeta {
+.STRPreviewMeta, .STREpisodeMeta {
 	display: block;
 
 	font-family: "Helvetica Neue";
 	opacity: 0.5;
 }
 
-.STRPreviewTitle {
+.STRPreviewTitle, .STREpisodeTitle {
 	font-size: 28px;
 }
 
 .STRPreviewMeta, .STRPreviewTitle, .STRPreviewNotes {
 	display: none;
+}
+
+.STREpisode {
+	margin-bottom: 100px;
 }
