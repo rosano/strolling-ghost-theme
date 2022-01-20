@@ -8,20 +8,57 @@
 
 <p class="OLSKFollow">Receive updates on <a class="OLSKFollowTwitter" target="_blank" href="https://twitter.com/rosano">Twitter</a> or <a class="OLSKFollowMastodon" target="_blank" href="https://merveilles.town/@rosano">Mastodon</a>.</p>
 
-<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
-
-	<p>
-		<input class="ROCOBulletinAddressField" type="email" name="email" placeholder="you@example.com">
-	</p>
-
-	<input class="ROCOBulletinProjectField" type="hidden" name="tag" value="RP_005">
-	<input type="hidden" value="1" name="embed">
-
-	<p>
-		<input class="ROCOBulletinSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe to mailing list">
-	</p>
+<div class="ROCOBulletin">
 	
+<form class="ROCOBulletinScript OLSKDecorBigForm" data-members-form>
+
+<p>
+	<input class="ROCOBulletinScriptAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
+</p>
+
+<input class="ROCOBulletinScriptProjectField" type="hidden" name="tag" value="RP_013" data-members-label />
+
+<p>
+	<input class="ROCOBulletinScriptSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe to mailing list" />
+  <strong class="ROCOBulletinScriptFeedback">Check your inbox (and maybe the spam folder) for an activation link.</strong>
+</p>
+
 </form>
+
+<style>
+.ROCOBulletinScript .ROCOBulletinScriptFeedback {
+  display: none;
+}
+
+.ROCOBulletinScript.success input {
+  display: none !important;
+}
+
+.ROCOBulletinScript.success .ROCOBulletinScriptFeedback {
+  display: unset !important;
+}
+</style>
+
+<noscript>
+
+<form class="ROCOBulletinNoscript OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
+
+<p>
+	<input class="ROCOBulletinNoscriptAddressField" type="email" name="email" placeholder="you@example.com" />
+</p>
+
+<input class="ROCOBulletinNoscriptProjectField" type="hidden" name="tag" value="RP_013" />
+<input type="hidden" value="1" name="embed" />
+
+<p>
+	<input class="ROCOBulletinNoscriptSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe to mailing list" />
+</p>
+
+</form>
+
+</noscript>
+
+</div>
 
 </div>
 
