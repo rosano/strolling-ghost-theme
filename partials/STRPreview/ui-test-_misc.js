@@ -6,14 +6,6 @@ describe('STRPreview_Misc', function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
-	describe('STRPreview', function test_STRPreview () {
-
-		it('classes OLSKCommonCard', function () {
-			browser.assert.hasClass(STRPreview, 'OLSKCommonCard');
-		});
-	
-	});
-
 	describe('STRPreviewNumber', function test_STRPreviewNumber () {
 
 		it('sets text', function () {
@@ -42,6 +34,14 @@ describe('STRPreview_Misc', function () {
 
 		it('sets text', function () {
 			browser.assert.text(STRPreviewTitle, 'STREpisodeTitleText');
+		});
+	
+	});
+
+	describe('STRPreviewExcerpt', function test_STRPreviewExcerpt () {
+
+		it('sets text', function () {
+			browser.assert.text(STRPreviewExcerpt, 'STREpisodeContentText');
 		});
 	
 	});
