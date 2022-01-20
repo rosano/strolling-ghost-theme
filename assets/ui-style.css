@@ -24,3 +24,22 @@ a {
 .STRIntroPlatforms a {
 	margin-right: 4px;
 }
+
+.STRPreview {
+	align-items: flex-start;
+}
+
+.STRPreview a {
+	text-decoration: none;
+}
+
+.STRPreviewMeta {
+	display: block;
+
+	font-family: "Helvetica Neue";
+	opacity: 0.5;
+}
+
+.STRPreviewTitle {
+	font-size: 28px;
+}
