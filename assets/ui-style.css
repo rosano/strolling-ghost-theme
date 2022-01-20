@@ -13,6 +13,14 @@ a {
 	text-decoration: none;
 }
 
+.STRAboveCrownImage {
+	margin-right: unset;
+}
+
+.STRAboveCrownTitle {
+	font-size: 25px;
+}
+
 .STRIntroPlatforms a {
 	margin-right: 4px;
 }
