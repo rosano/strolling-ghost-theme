@@ -6,6 +6,22 @@ describe('STRBelow_Misc', function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
+	describe('STRBelowEdit', function test_STRBelowEdit () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRBelowEdit, 'href', 'https://github.com/strollingpodcast/STRTheme');
+		});
+
+		it('sets target', function () {
+			browser.assert.attribute(STRBelowEdit, 'target', '_blank');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRBelowEdit, 'Edit this');
+		});
+	
+	});
+
 	describe('STRBelowGhost', function test_STRBelowGhost () {
 
 		it('sets text', function () {

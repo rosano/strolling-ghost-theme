@@ -3,6 +3,8 @@ const kDefaultRoutePath = '/';
 Object.entries({
 	STRBelow: '.STRBelow',
 
+	STRBelowEdit: '.STRBelowEdit',
+
 	STRBelowGhost: '.STRBelowGhost',
 	STRBelowGhostLink: '.STRBelowGhostLink',
 }).map(function (e) {
@@ -21,6 +23,10 @@ describe('STRBelow_Access', function () {
 	
 	it('shows ROCOGazette', function() {
 		browser.assert.elements('.ROCOGazette', 1);
+	});
+
+	it('shows STRBelowEdit', function () {
+		browser.assert.elements(STRBelowEdit, 1);
 	});
 
 	it('shows STRBelowGhost', function () {
