@@ -52,3 +52,28 @@ a {
 .STREpisode {
 	margin-bottom: 100px;
 }
+
+/* STRMembership  */
+
+.gh-post-upgrade-cta {
+	display: none;
+}
+
+.STRMembership {
+	text-align: center;
+
+	background: #fcedf4;
+}
+
+.STRMembershipButton {
+	border: none !important;
+	background: white !important;
+}
+
+.STRMembershipExistingLink {
+	font-weight: bold;
+}
+
+.STRMembershipButton, .STRMembershipExistingLink {
+	--OLSKDecorModuleForeground: #E56A9B !important;
+}

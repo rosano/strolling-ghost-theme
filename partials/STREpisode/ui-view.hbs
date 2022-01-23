@@ -3,20 +3,28 @@
 <div class="STREpisode">
 
 <p>
-	<a class="STREpisodeAll" href="/">← All episodes</a>
+<a class="STREpisodeAll" href="/">← All episodes</a>
 </p>
 
 <span class="STREpisodeMeta">
-	<span class="STREpisodeMetaNumber">{{@site.title}} Episode {{slug}}</span>
-	—
-	<time class="STREpisodeMetaDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
+<span class="STREpisodeMetaNumber">{{@site.title}} Episode {{slug}}</span>
+—
+<time class="STREpisodeMetaDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
 </span>
 
 <p>
-	<a class="STREpisodeTitle" href="{{url}}">{{title}}</a>
+<a class="STREpisodeTitle" href="{{url}}">{{title}}</a>
 </p>
 
-<article class="STREpisodeContent">{{content}}</article>
+<article class="STREpisodeContent">
+
+{{content}}
+
+{{#unless access}}
+	{{> STRMembership/ui-view}}
+{{/unless}}
+
+</article>
 
 </div>
 
