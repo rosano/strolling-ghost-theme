@@ -1,19 +1,19 @@
 const kDefaultRoutePath = '/';
 
 Object.entries({
-	STRDefault: '.STRDefault',
+	STR_Default: '.STR_Default',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
 
-describe('STRDefault_Access', function () {
+describe('STR_Default_Access', function () {
 
 	before(function() {
 		return browser.visit(kDefaultRoutePath);
 	});
 	
-	it('shows STRDefault', function() {
-		browser.assert.elements(STRDefault, 1);
+	it('shows STR_Default', function() {
+		browser.assert.elements(STR_Default, 1);
 	});
 	
 });

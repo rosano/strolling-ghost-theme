@@ -1,19 +1,19 @@
 const kDefaultRoutePath = '/';
 
-describe('STRDefault_Misc', function () {
+describe('STR_Default_Misc', function () {
 
 	before(function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
-	describe('STRDefault', function test_STRDefault () {
+	describe('STR_Default', function test_STR_Default () {
 
 		it('classes OLSKDecor', function () {
-			browser.assert.hasClass(STRDefault, 'OLSKDecor');
+			browser.assert.hasClass(STR_Default, 'OLSKDecor');
 		}); 
 
 		it('classes OLSKDecorCapped', function () {
-			browser.assert.hasClass(STRDefault, 'OLSKDecorCapped');
+			browser.assert.hasClass(STR_Default, 'OLSKDecorCapped');
 		});
 	
 	});

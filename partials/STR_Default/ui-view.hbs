@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+<head>
+
+<title>{{meta_title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+
+{{ghost_head}}
+
+<link rel="stylesheet" href="{{asset "ui-style.css"}}">
+
+</head>
+
+<body class="STR_Default OLSKDecor OLSKDecorCapped">
+
+{{> STRAbove/ui-view}}
+
+{{{body}}}
+
+{{> STRBelow/ui-view}}
+
+{{ghost_foot}}
+
+</body>
+</html>
