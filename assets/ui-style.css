@@ -1,4 +1,5 @@
 :root {
+	--OLSKCommonContainerMaxWidth: 600px;
 	--OLSKCommonBackground: #32254E;
 	--OLSKCommonForeground: #FFE8F9;
 }
