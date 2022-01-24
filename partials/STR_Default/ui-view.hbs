@@ -8,6 +8,15 @@
 
 {{ghost_head}}
 
+<!-- STR_DefaultTwitterPlayerCard -->
+
+{{#is "post"}}
+<meta name="twitter:card" content="player" />
+<meta name="twitter:player" content="https://go.rosano.ca{{url}}" />
+<meta name="twitter:player:width" content="500" />
+<meta name="twitter:player:height" content="180" />
+{{/is}}
+
 <link rel="stylesheet" href="{{asset "ui-style.css"}}">
 
 </head>
