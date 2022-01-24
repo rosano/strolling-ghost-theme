@@ -18,22 +18,14 @@ describe('STREpisode_Misc', function () {
 	
 	});
 
-	describe('STREpisodeMetaNumber', function test_STREpisodeMetaNumber () {
-
-		it('sets text', function () {
-			browser.assert.text(STREpisodeMetaNumber, 'STRTitleText Episode 0000');
-		});
-	
-	});
-
-	describe('STREpisodeMetaDate', function test_STREpisodeMetaDate () {
+	describe('STREpisodeDate', function test_STREpisodeDate () {
 
 		it('sets datetime', function () {
-			browser.assert.attribute(STREpisodeMetaDate, 'datetime', '2022-01-18');
+			browser.assert.attribute(STREpisodeDate, 'datetime', '2022-01-18');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STREpisodeMetaDate, 'January 18th, 2022');
+			browser.assert.text(STREpisodeDate, 'January 18th, 2022');
 		});
 	
 	});

@@ -3,9 +3,7 @@ const kDefaultRoutePath = '/0000/';
 Object.entries({
 	STREpisode: '.STREpisode',
 	STREpisodeAll: '.STREpisodeAll',
-	STREpisodeMeta: '.STREpisodeMeta',
-	STREpisodeMetaNumber: '.STREpisodeMetaNumber',
-	STREpisodeMetaDate: '.STREpisodeMetaDate',
+	STREpisodeDate: '.STREpisodeDate',
 	STREpisodeTitle: '.STREpisodeTitle',
 	STREpisodeContent: '.STREpisodeContent',
 	STREpisodeDiscussionHeading: '.STREpisodeDiscussionHeading',
@@ -27,16 +25,8 @@ describe('STREpisode_Access', function () {
 		browser.assert.elements(STREpisodeAll, 1);
 	});
 
-	it('shows STREpisodeMeta', function () {
-		browser.assert.elements(STREpisodeMeta, 1);
-	});
-	
-	it('shows STREpisodeMetaNumber', function() {
-		browser.assert.elements(STREpisodeMetaNumber, 1);
-	});
-	
-	it('shows STREpisodeMetaDate', function() {
-		browser.assert.elements(STREpisodeMetaDate, 1);
+	it('shows STREpisodeDate', function () {
+		browser.assert.elements(STREpisodeDate, 1);
 	});
 	
 	it('shows STREpisodeTitle', function() {
