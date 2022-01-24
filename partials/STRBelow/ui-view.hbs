@@ -6,57 +6,39 @@
 
 <h2 class="ROCOGazetteHeading">Join my mailing list to hear when this launches</h2>
 
-<div class="ROCOBulletin">
-	
-<form class="ROCOBulletinScript OLSKDecorBigForm" data-members-form data-site-url="https://list.rosano.ca">
+<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank" data-members-form data-site-url="https://list.rosano.ca">
 
 <p>
-	<input class="ROCOBulletinScriptAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
+	<input class="ROCOBulletinAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email>
 </p>
 
-<input class="ROCOBulletinScriptProjectField" type="hidden" name="tag" value="RP_013" data-members-label />
+<!-- ghost -->
+<input class="ROCOBulletinProjectFieldGhost" type="hidden" name="labels" value="RP_013" data-members-label>
+
+<!-- buttondown -->
+<input class="ROCOBulletinProjectFieldButtondown" type="hidden" name="tag" value="RP_013">
+<input type="hidden" value="1" name="embed">
 
 <p>
-	<input class="ROCOBulletinScriptSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe" />
-  <strong class="ROCOBulletinScriptFeedback">Check your inbox (and maybe the spam folder) for an activation link.</strong>
+	<input class="ROCOBulletinSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe">
+  <strong class="ROCOBulletinFeedback">Check your inbox (and maybe the spam folder) for an activation link.</strong>
 </p>
 
 </form>
 
 <style>
-.ROCOBulletinScript .ROCOBulletinScriptFeedback {
+.ROCOBulletin .ROCOBulletinFeedback {
   display: none;
 }
 
-.ROCOBulletinScript.success input {
+.ROCOBulletin.success input {
   display: none !important;
 }
 
-.ROCOBulletinScript.success .ROCOBulletinScriptFeedback {
+.ROCOBulletin.success .ROCOBulletinFeedback {
   display: unset !important;
 }
 </style>
-
-<noscript>
-
-<form class="ROCOBulletinNoscript OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
-
-<p>
-	<input class="ROCOBulletinNoscriptAddressField" type="email" name="email" placeholder="you@example.com" />
-</p>
-
-<input class="ROCOBulletinNoscriptProjectField" type="hidden" name="tag" value="RP_013" />
-<input type="hidden" value="1" name="embed" />
-
-<p>
-	<input class="ROCOBulletinNoscriptSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe" />
-</p>
-
-</form>
-
-</noscript>
-
-</div>
 
 </div>
 
