@@ -34,7 +34,7 @@ a {
 	text-decoration: none;
 }
 
-.STRPreviewMeta, .STREpisodeMeta {
+.STRPreviewDate, .STREpisodeMeta {
 	display: block;
 
 	font-family: "Helvetica Neue";
@@ -45,7 +45,7 @@ a {
 	font-size: 28px;
 }
 
-.STRPreviewMeta, .STRPreviewTitle, .STRPreviewNotes {
+.STRPreviewTitle {
 	display: none;
 }
 

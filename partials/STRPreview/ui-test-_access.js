@@ -2,7 +2,6 @@ const kDefaultRoutePath = '/';
 
 Object.entries({
 	STRPreview: '.STRPreview',
-	STRPreviewNumber: '.STRPreviewNumber',
 	STRPreviewDate: '.STRPreviewDate',
 	STRPreviewTitle: '.STRPreviewTitle',
 	STRPreviewEmbed: '.STRPreviewEmbed',
@@ -19,10 +18,6 @@ describe('STRPreview_Access', function () {
 	
 	it('shows STRPreview', function() {
 		browser.assert.elements(STRPreview, 1);
-	});
-	
-	it('shows STRPreviewNumber', function() {
-		browser.assert.elements(STRPreviewNumber, 1);
 	});
 	
 	it('shows STRPreviewDate', function() {

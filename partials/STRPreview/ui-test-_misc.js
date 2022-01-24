@@ -6,14 +6,6 @@ describe('STRPreview_Misc', function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
-	describe('STRPreviewNumber', function test_STRPreviewNumber () {
-
-		it('sets text', function () {
-			browser.assert.text(STRPreviewNumber, '0000');
-		});
-	
-	});
-
 	describe('STRPreviewDate', function test_STRPreviewDate () {
 
 		it('sets datetime', function () {
