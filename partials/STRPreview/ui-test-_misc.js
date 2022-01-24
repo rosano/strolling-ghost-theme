@@ -38,10 +38,10 @@ describe('STRPreview_Misc', function () {
 	
 	});
 
-	describe('STRPreviewExcerpt', function test_STRPreviewExcerpt () {
+	describe('STRPreviewEmbed', function test_STRPreviewEmbed () {
 
-		it('sets text', function () {
-			browser.assert.text(STRPreviewExcerpt, 'STREpisodeContentText');
+		it('sets src', function () {
+			browser.assert.attribute(STRPreviewEmbed, 'src', 'https://go.rosano.ca/0000');
 		});
 	
 	});
@@ -53,7 +53,7 @@ describe('STRPreview_Misc', function () {
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRPreviewNotes, '→ Episode notes');
+			browser.assert.text(STRPreviewNotes, '→ 0000 episode notes');
 		});
 	
 	});

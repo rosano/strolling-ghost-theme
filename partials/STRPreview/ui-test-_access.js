@@ -5,7 +5,7 @@ Object.entries({
 	STRPreviewNumber: '.STRPreviewNumber',
 	STRPreviewDate: '.STRPreviewDate',
 	STRPreviewTitle: '.STRPreviewTitle',
-	STRPreviewExcerpt: '.STRPreviewExcerpt',
+	STRPreviewEmbed: '.STRPreviewEmbed',
 	STRPreviewNotes: '.STRPreviewNotes',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
@@ -33,8 +33,8 @@ describe('STRPreview_Access', function () {
 		browser.assert.elements(STRPreviewTitle, 1);
 	});
 	
-	it('shows STRPreviewExcerpt', function() {
-		browser.assert.elements(STRPreviewExcerpt, 1);
+	it('shows STRPreviewEmbed', function() {
+		browser.assert.elements(STRPreviewEmbed, 1);
 	});
 	
 	it('shows STRPreviewNotes', function() {
