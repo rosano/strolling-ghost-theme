@@ -58,4 +58,12 @@ describe('STREpisode_Misc', function () {
 	
 	});
 
+	describe('STREpisodeDiscussionHeading', function test_STREpisodeDiscussionHeading () {
+
+		it('sets text', function () {
+			browser.assert.text(STREpisodeDiscussionHeading, 'Discussion');
+		});
+	
+	});
+
 });
