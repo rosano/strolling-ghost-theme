@@ -96,6 +96,14 @@ a {
 
 /* STRBelow  */
 
+.STRBelowManageContainer {
+	text-align: center;
+}
+
+.STRBelowManage {
+	color: black !important;
+}
+
 .STRBelowLinks {
 	text-align: center;
 }

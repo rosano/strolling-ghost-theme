@@ -3,6 +3,8 @@ const kDefaultRoutePath = '/';
 Object.entries({
 	STRBelow: '.STRBelow',
 
+	STRBelowManage: '.STRBelowManage',
+
 	STRBelowEdit: '.STRBelowEdit',
 
 	STRBelowGhost: '.STRBelowGhost',
@@ -25,6 +27,10 @@ describe('STRBelow_Access', function () {
 		browser.assert.elements('.ROCOGazette', 1);
 	});
 
+	it('hides STRBelowManage', function () {
+		browser.assert.elements(STRBelowManage, 0);
+	});
+
 	it('shows STRBelowEdit', function () {
 		browser.assert.elements(STRBelowEdit, 1);
 	});
@@ -39,6 +45,18 @@ describe('STRBelow_Access', function () {
 	
 	it('shows ROCORootLink', function() {
 		browser.assert.elements('.ROCORootLink', 1);
+	});
+
+	context('paid', function () {
+		
+		before(function () {
+			return browser.visit('/p/1318746a-c78b-454f-a5ac-b792ce4a185d/');
+		});
+
+		it('shows STRBelowManage', function () {
+			browser.assert.elements(STRBelowManage, 1);
+		});
+
 	});
 
 });
