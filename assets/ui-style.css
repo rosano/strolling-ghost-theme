@@ -1,11 +1,11 @@
 :root {
 	--OLSKCommonContainerMaxWidth: 600px;
 	--OLSKCommonBackground: #32254E;
-	--OLSKCommonForeground: #FFE8F9;
+	--OLSKCommonForeground: #fff5fd;
 }
 
 a {
-	color: #E56A9B !important;
+	color: #ff76ad !important;
 }
 
 .STRAboveCrown {
@@ -28,6 +28,11 @@ a {
 
 .STRPreview {
 	align-items: flex-start;
+}
+
+.STREpisodeTitle {
+  font-family: var(--OLSKCommonHeadingFontFamily);
+  color: unset !important;
 }
 
 .STRPreview a, .STREpisode a {
@@ -55,8 +60,17 @@ a {
 
 .kg-callout-card-yellow {
 	background: rgb(255, 239, 190) !important;
-	color: black !important;
+	color: hsl(45.2, 100%, 19.3%) !important;
 	margin: 25px 0;
+}
+
+#members-corner {
+	padding: 20px;
+
+	margin-top: 40px;
+	
+	background: #171124;
+	text-align: center;
 }
 
 /* STRMembership  */
