@@ -73,24 +73,24 @@ a {
 	text-align: center;
 }
 
-/* STRMembership  */
+/* STRPrompt  */
 
-.STRMembership {
+.STRPrompt {
 	text-align: center;
 
 	background: #fcedf4;
 }
 
-.STRMembershipButton {
+.STRPromptButton {
 	border: none !important;
 	background: white !important;
 }
 
-.STRMembershipExistingLink {
+.STRPromptExistingLink {
 	font-weight: bold;
 }
 
-.STRMembershipButton, .STRMembershipExistingLink {
+.STRPromptButton, .STRPromptExistingLink {
 	--OLSKDecorModuleForeground: #E56A9B !important;
 }
 
