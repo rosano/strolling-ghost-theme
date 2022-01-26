@@ -30,12 +30,12 @@ a {
 	align-items: flex-start;
 }
 
-.STREpisodeTitle {
+.STREpisodeTitle, .STRGenericTitle {
   font-family: var(--OLSKCommonHeadingFontFamily);
   color: unset !important;
 }
 
-.STRPreview a, .STREpisode a {
+.STRPreview a, .STREpisode a, .STRGenericTitle a{
 	text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ a {
 	opacity: 0.5;
 }
 
-.STRPreviewTitle, .STREpisodeTitle {
+.STRPreviewTitle, .STREpisodeTitle, .STRGenericTitle {
 	font-size: 28px;
 }
 
