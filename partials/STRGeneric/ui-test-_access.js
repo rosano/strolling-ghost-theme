@@ -25,9 +25,5 @@ describe('STRGeneric_Access', function () {
 	it('shows STRGenericContent', function() {
 		browser.assert.elements(STRGenericContent, 1);
 	});
-
-	it('shows STRIntro', function() {
-		browser.assert.elements('.STRIntro', 1);
-	});
 	
 });
