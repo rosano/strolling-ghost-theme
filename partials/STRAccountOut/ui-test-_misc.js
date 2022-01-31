@@ -8,6 +8,10 @@ describe('STRAccountOut_Misc', function () {
 
 	describe('STRAccountOut', function test_STRAccountOut () {
 
+		it('classes STRAccountModule', function () {
+			browser.assert.hasClass(STRAccountOut, 'STRAccountModule');
+		});
+
 		it('classes OLSKDecorModule', function () {
 			browser.assert.hasClass(STRAccountOut, 'OLSKDecorModule');
 		});

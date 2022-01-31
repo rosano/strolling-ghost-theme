@@ -74,9 +74,9 @@ a {
 	text-align: center;
 }
 
-/* STRAccountOut */
+/* STRAccountModule */
 
-.STRAccountOut {
+.STRAccountModule {
 	padding: 18px;
 	border: 0;
 
@@ -84,15 +84,15 @@ a {
 	text-align: center;
 }
 
-.STRAccountOut * {
+.STRAccountModule * {
 	--OLSKDecorModuleForeground: #8b67d9;	
 }
 
-.STRAccountOutExistingLink {
+.STRAccountExistingLink {
 	font-weight: bold;
 }
 
-.STRAccountOutLink {
+.STRAccountModule a {
 	--OLSKDecorModuleForeground: #a177fb;	
 
 	font-weight: bold;
