@@ -21,7 +21,7 @@ describe('STRAccountIn_Misc', function () {
 	describe('STRAccountInBlurb', function test_STRAccountInBlurb () {
 
 		it('sets text', function () {
-			browser.assert.text(STRAccountInBlurb, 'Find extended versions on episode pages under "Members Corner".');
+			browser.assert.text(STRAccountInBlurb, 'Find extended versions in the episode notes under "Members Corner".');
 		});
 
 	});
