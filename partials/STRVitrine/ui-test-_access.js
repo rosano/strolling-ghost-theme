@@ -16,8 +16,12 @@ describe('STRVitrine_Access', function () {
 		browser.assert.elements(STRVitrine, 1);
 	});
 	
-	it('shows STRAbove', function() {
-		browser.assert.elements(STRAbove, 1);
+	it('shows STRIntro', function() {
+		browser.assert.elements('.STRIntro', 1);
+	});
+
+	it('shows STRPreview', function () {
+		browser.assert.elements('.STRPreview', 1);
 	});
 
 });
