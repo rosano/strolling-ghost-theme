@@ -74,6 +74,31 @@ a {
 	text-align: center;
 }
 
+/* STRAccountOut */
+
+.STRAccountOut {
+	padding: 18px;
+	border: 0;
+
+	background: #261c3b;
+	text-align: center;
+}
+
+.STRAccountOut * {
+	--OLSKDecorModuleForeground: #8b67d9;	
+}
+
+.STRAccountOutExistingLink {
+	font-weight: bold;
+}
+
+.STRAccountOutLink {
+	--OLSKDecorModuleForeground: #a177fb;	
+
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 /* STRPrompt */
 
 .STRPrompt {
