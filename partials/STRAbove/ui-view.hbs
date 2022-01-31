@@ -6,3 +6,19 @@
 		</section>
 	</a>
 </div>
+
+{{#post}}
+{{#has slug="straccountin"}}
+  {{> STRAccountIn/ui-view}}
+{{/has}}
+{{/post}}
+
+{{^is 'home'}}
+
+{{#if @member}}
+{{> STRAccountIn/ui-view}}
+{{else}}
+{{> STRAccountOut/ui-view}}
+{{/if}}
+
+{{/is}}

@@ -2,7 +2,11 @@
 
 {{> STRIntro/ui-view}}
 
+{{#if @member}}
+{{> STRAccountIn/ui-view}}
+{{else}}
 {{> STRAccountOut/ui-view}}
+{{/if}}
 
 {{> STRPreview/ui-view}}
 

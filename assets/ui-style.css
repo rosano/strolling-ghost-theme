@@ -56,6 +56,7 @@ a {
 }
 
 .STREpisode {
+	margin-top: 50px;
 	margin-bottom: 100px;
 }
 
@@ -79,6 +80,8 @@ a {
 .STRAccountModule {
 	padding: 18px;
 	border: 0;
+
+	margin: 0;
 
 	background: #261c3b;
 	text-align: center;
