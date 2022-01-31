@@ -7,6 +7,7 @@ Object.entries({
 	STRIntroPlatformsPocketCasts: '.STRIntroPlatformsPocketCasts',
 	STRIntroPlatformsApplePodcasts: '.STRIntroPlatformsApplePodcasts',
 	STRIntroPlatformsSpotify: '.STRIntroPlatformsSpotify',
+	STRIntroPlatformsYouTube: '.STRIntroPlatformsYouTube',
 	STRIntroPlatformsFeed: '.STRIntroPlatformsFeed',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
@@ -40,6 +41,10 @@ describe('STRIntro_Access', function () {
 	
 	it('shows STRIntroPlatformsSpotify', function() {
 		browser.assert.elements(STRIntroPlatformsSpotify, 1);
+	});
+	
+	it('shows STRIntroPlatformsYouTube', function() {
+		browser.assert.elements(STRIntroPlatformsYouTube, 1);
 	});
 	
 	it('shows STRIntroPlatformsFeed', function() {

@@ -62,6 +62,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
+	describe('STRIntroPlatformsYouTube', function test_STRIntroPlatformsYouTube () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsYouTube, 'href', '/youtube');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsYouTube, 'YouTube');
+		});
+	
+	});
+
 	describe('STRIntroPlatformsFeed', function test_STRIntroPlatformsFeed () {
 
 		it('sets href', function () {
