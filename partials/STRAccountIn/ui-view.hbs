@@ -4,6 +4,19 @@
 
 </div>
 
-<div class="STRAccountDetails">
-	<small><a class="STRAccountDetailsLink OLSKDecorTappable"  href="#/portal">Settings</a></small>
-</div>
+<small class="STRAccountDetails">
+	<span>
+		Your subscription 
+		{{#foreach @member.subscriptions}}
+			{{#if cancel_at_period_end}}
+				expires
+			{{else}}
+				renews
+			{{/if}}
+			
+			{{date current_period_end format="MMMM DD, YYYY"}}</span>
+		{{/foreach}}
+	</span>
+	<span>&nbsp;&#151;&nbsp;</span> 
+	<a class="STRAccountDetailsLink OLSKDecorTappable"  href="#/portal">Settings</a>
+</small>
