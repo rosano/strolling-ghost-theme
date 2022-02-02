@@ -26,18 +26,18 @@ describe('STRAccountIn_Misc', function () {
 
 	});
 
-	describe('STRAccountInLink', function test_STRAccountInLink () {
+	describe('STRAccountDetailsLink', function test_STRAccountDetailsLink () {
 
 		it('classes OLSKDecorTappable', function () {
-			browser.assert.hasClass(STRAccountInLink, 'OLSKDecorTappable');
+			browser.assert.hasClass(STRAccountDetailsLink, 'OLSKDecorTappable');
 		});
 
 		it('sets href', function () {
-			browser.assert.attribute(STRAccountInLink, 'href', '#/portal');
+			browser.assert.attribute(STRAccountDetailsLink, 'href', '#/portal');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRAccountInLink, 'Settings');
+			browser.assert.text(STRAccountDetailsLink, 'Settings');
 		});
 
 	});

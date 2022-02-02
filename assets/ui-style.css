@@ -103,6 +103,17 @@ a {
 	text-decoration: underline;
 }
 
+.STRAccountDetails {
+	padding: 4px;
+	opacity: 0.7;
+
+	display: flex;
+}
+
+.STRAccountDetailsLink {
+	color: var(--STRForegroundAlternative) !important;
+}
+
 /* STRPrompt */
 
 .STRPrompt {
