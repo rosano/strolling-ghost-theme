@@ -2,6 +2,7 @@
 	--OLSKCommonContainerMaxWidth: 600px;
 	--OLSKCommonBackground: #32254E;
 	--OLSKCommonForeground: #fff5fd;
+	--STRForegroundAlternative: #a177fb;
 }
 
 a {
@@ -96,7 +97,7 @@ a {
 }
 
 .STRAccountModule a {
-	--OLSKDecorModuleForeground: #a177fb;	
+	--OLSKDecorModuleForeground: var(--STRForegroundAlternative);	
 
 	font-weight: bold;
 	text-decoration: underline;
