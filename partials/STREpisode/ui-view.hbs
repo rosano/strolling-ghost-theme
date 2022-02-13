@@ -18,6 +18,18 @@
 
 </article>
 
+{{#unless @member}}
+<script type="text/javascript">
+(function() {
+	if (!document.querySelector('#sections')) {
+		return;
+	}
+
+	document.querySelector('#sections').nextElementSibling.nextElementSibling.innerHTML = document.querySelector('#sections').nextElementSibling.nextElementSibling.innerHTML.replace(/\d+\:\d+\s+/g, '')
+})();
+</script>
+{{/unless}}
+
 {{#unless status}}
 
 {{> ROCOForum}}
