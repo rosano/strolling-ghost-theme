@@ -136,6 +136,21 @@ a {
 	--OLSKDecorModuleForeground: #E56A9B !important;
 }
 
+/* STRPagination */
+
+.STRPagination {
+	margin: 40px;
+	text-align: center;
+}
+
+.STRPagination span {
+	opacity: 0.5;
+}
+
+.STRPagination a {
+	color: #ccc;
+}
+
 /* STRBelow */
 
 .STRBelowLinks {

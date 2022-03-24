@@ -35,5 +35,9 @@ describe('STRPreview_Access', function () {
 	it('shows STRPreviewNotes', function() {
 		browser.assert.elements(STRPreviewNotes, 1);
 	});
+
+	it('shows STRPagination', function () {
+		browser.assert.elements('.STRPagination', 1);
+	});
 	
 });
