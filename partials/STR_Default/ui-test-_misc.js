@@ -27,7 +27,7 @@ describe('STR_Default_Misc', function () {
 			});
 
 			it('sets meta[name="twitter:player"]', function () {
-				browser.assert.attribute('meta[name="twitter:player"]', 'content', 'https://go.rosano.ca/0000/');
+				browser.assert.attribute('meta[name="twitter:player"]', 'content', 'https://go.rosano.ca/strolling-0000-audio');
 			});
 
 			it('sets meta[name="twitter:player:width"]', function () {
