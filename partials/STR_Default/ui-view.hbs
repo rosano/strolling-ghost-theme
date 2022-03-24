@@ -13,9 +13,9 @@
 {{#is "post"}}
 {{#post}}
 <meta name="twitter:card" content="player" />
-<meta name="twitter:player" content="https://go.rosano.ca/strolling-{{slug}}-{{#has tag="Video"}}video{{else}}audio{{/has}}" />
+<meta name="twitter:player" content="https://go.rosano.ca/strolling-{{slug}}-{{#has tag="Audio"}}audio{{else}}video{{/has}}" />
 <meta name="twitter:player:width" content="500" />
-<meta name="twitter:player:height" content="{{#has tag="Video"}}300{{else}}180{{/has}}" />
+<meta name="twitter:player:height" content="{{#has tag="Audio"}}180{{else}}300{{/has}}" />
 {{/post}}
 {{/is}}
 

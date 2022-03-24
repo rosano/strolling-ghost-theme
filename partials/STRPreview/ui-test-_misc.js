@@ -33,7 +33,7 @@ describe('STRPreview_Misc', function () {
 	describe('STRPreviewEmbed', function test_STRPreviewEmbed () {
 
 		it('sets src', function () {
-			browser.assert.attribute(STRPreviewEmbed, 'src', 'https://go.rosano.ca/strolling-0000-audio');
+			browser.assert.attribute(STRPreviewEmbed, 'src', 'https://go.rosano.ca/strolling-0000-video');
 		});
 	
 	});

@@ -27,7 +27,7 @@ describe('STR_Default_Misc', function () {
 			});
 
 			it('sets meta[name="twitter:player"]', function () {
-				browser.assert.attribute('meta[name="twitter:player"]', 'content', 'https://go.rosano.ca/strolling-0000-audio');
+				browser.assert.attribute('meta[name="twitter:player"]', 'content', 'https://go.rosano.ca/strolling-0000-video');
 			});
 
 			it('sets meta[name="twitter:player:width"]', function () {
@@ -35,7 +35,7 @@ describe('STR_Default_Misc', function () {
 			});
 
 			it('sets meta[name="twitter:player:height"]', function () {
-				browser.assert.attribute('meta[name="twitter:player:height"]', 'content', '180');
+				browser.assert.attribute('meta[name="twitter:player:height"]', 'content', '300');
 			});
 
 		});
