@@ -17,7 +17,7 @@ describe('STRPrompt_Misc', function () {
 	describe('STRPromptBlurb', function test_STRPromptBlurb () {
 
 		it('sets text', function () {
-			browser.assert.text(STRPromptBlurb, 'Become a member to get full access');
+			browser.assert.text(STRPromptBlurb, 'Become a member to hear full episodes');
 		});
 	
 	});
