@@ -1,0 +1,15 @@
+{{#get "posts" limit="5" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags" as |related|}}
+<div class="STRRelated">
+
+<h2 class="STRRelatedHeading">Related</h2>
+
+<ul>
+{{#foreach related}}
+<li class="STRRelatedListItem">
+	<a class="STRRelatedListItemLink" href="{{url}}">{{title}}</a>
+</li>
+{{/foreach}}
+</ul>
+
+</div>
+{{/get}}
