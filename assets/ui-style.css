@@ -31,7 +31,17 @@ h1 {
 	margin-right: 4px;
 }
 
-.STRRandomHeading, .STRFeatureHeading {
+.STRRandom {
+	text-align: center;
+}
+
+.STRRandomEmbed {
+	width: 80%;
+	border: 10px solid #ff76ad;
+	border-radius: 10px;
+}
+
+.STRFeatureHeading {
 	text-align: center;
 }
 
