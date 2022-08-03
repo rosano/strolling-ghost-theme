@@ -1,4 +1,4 @@
-const kDefaultRoutePath = '/';
+const kDefaultRoutePath = '/tag/strtag/';
 
 Object.entries({
 	STRPreview: '.STRPreview',
