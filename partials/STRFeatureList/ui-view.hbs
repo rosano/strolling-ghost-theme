@@ -2,9 +2,9 @@
 
 <h1 class="STRFeatureListHeading">Featured content</h1>
 
-{{#get "posts" filter="featured:true" include="tags"}}
-
 {{#foreach posts}}
+
+{{#if featured}}
 
 <div class="STRFeatureListItem">
 
@@ -17,10 +17,10 @@
 
 </div>
 
+{{/if}}
+
 {{/foreach}}
 
 {{pagination}}
-
-{{/get}}
 
 </div>
