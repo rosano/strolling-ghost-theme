@@ -68,7 +68,7 @@ h1 {
 	font-size: 28px;
 }
 
-.STRFeatureListItemTitle a, .STRPreview a, .STREpisode a, .STRGenericTitle a{
+.STRFeatureList a, .STRPreview a, .STREpisode a, .STRGenericTitle a {
 	text-decoration: none;
 }
 
