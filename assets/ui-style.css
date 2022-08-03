@@ -31,7 +31,7 @@ h1 {
 	margin-right: 4px;
 }
 
-.STRRandomHeading {
+.STRRandomHeading, .STRFeatureHeading {
 	text-align: center;
 }
 
