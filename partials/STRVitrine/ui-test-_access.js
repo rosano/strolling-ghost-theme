@@ -24,6 +24,10 @@ describe('STRVitrine_Access', function () {
 		browser.assert.elements('.STRAccountOut', 1);
 	});
 
+	it('shows STRRandom', function () {
+		browser.assert.elements('.STRRandom', 1);
+	});
+
 	it('shows STRPreview', function () {
 		browser.assert.elements('.STRPreview', 1);
 	});

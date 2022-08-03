@@ -1,0 +1,61 @@
+<div class="STRRandom">
+
+<h1 class="STRRandomHeading">Watch snippets at random</h1>
+
+<iframe class="STRRandomEmbed" id="youtube-player" src="https://www.youtube-nocookie.com/embed/videoseries?rel=0&amp;enablejsapi=1&amp;list=PL6v1zwoKiosMCiOTjwHG63nwuSAP_clUI" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script type="text/javascript">
+let player;
+
+const shuffle = function (inputData) {
+  return inputData
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+};
+
+const mod = {
+
+	// MESSAGE
+
+	MessageYouTubeAPIReady () {
+		player = new YT.Player('youtube-player', {
+		    events: {
+		      onReady () {
+		      	player.cuePlaylist(shuffle(player.getPlaylist()));
+		      	
+		      	window.setTimeout(function () {
+		      	  player.cuePlaylist(shuffle(player.getPlaylist()));
+		      	}, 1000)
+		      },
+		    }
+		});
+	},
+
+	// SETUP
+
+	SetupEverything() {
+		const tag = document.createElement('script');
+		tag.src = 'https://www.youtube.com/iframe_api';
+		const firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	},
+
+	// LIFECYCLE
+
+	LifecycleModuleDidLoad() {
+		if (!window.location.protocol.includes('https')) {
+			return;
+		}
+
+		mod.SetupEverything();
+	},
+
+};
+
+mod.LifecycleModuleDidLoad();
+
+window.onYouTubeIframeAPIReady = mod.MessageYouTubeAPIReady;
+</script>
+
+</div>
