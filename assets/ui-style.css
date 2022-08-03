@@ -32,7 +32,11 @@ h1 {
 }
 
 .STRFeatureListItem {
-	margin-bottom: var(--OLSKSectionSpacing);
+	margin-bottom: 100px;
+}
+
+.STRFeatureListItemTag {
+	margin-top: var(--OLSKSectionSpacing);
 }
 
 .STRFeatureListItemTagImage {
