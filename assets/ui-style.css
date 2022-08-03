@@ -81,7 +81,7 @@ h1 {
 
 @media (min-width: 450px) {
 
-	.STRPreviewTitle {
+	.STRFeatureListItemTitle, .STRPreviewTitle {
 		display: none;
 	}
 
