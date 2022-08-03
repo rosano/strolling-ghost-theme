@@ -4,6 +4,7 @@ Object.entries({
 	STRFeatureList: '.STRFeatureList',
 	STRFeatureListHeading: '.STRFeatureListHeading',
 	STRFeatureListItem: '.STRFeatureListItem',
+	STRFeatureListItemTitle: '.STRFeatureListItemTitle',
 	STRFeatureListItemEmbed: '.STRFeatureListItemEmbed',
 	STRFeatureListItemTag: '.STRFeatureListItemTag',
 	STRFeatureListItemTagImage: '.STRFeatureListItemTagImage',
@@ -28,6 +29,10 @@ describe('STRFeatureListItem_Access', function () {
 	
 	it('shows STRFeatureListItem', function() {
 		browser.assert.elements(STRFeatureListItem, 1);
+	});
+
+	it('shows STRFeatureListItemTitle', function () {
+		browser.assert.elements(STRFeatureListItemTitle, 1);
 	});
 	
 	it('shows STRFeatureListItemEmbed', function() {

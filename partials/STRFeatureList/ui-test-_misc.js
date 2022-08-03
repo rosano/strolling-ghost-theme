@@ -14,6 +14,18 @@ describe('STRFeatureList_Misc', function () {
 	
 	});
 
+	describe('STRFeatureListItemTitle', function test_STRFeatureListItemTitle () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRFeatureListItemTitle, 'href', '/0000/');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRFeatureListItemTitle, 'STREpisodeTitleText');
+		});
+	
+	});
+
 	describe('STRFeatureListItemEmbed', function test_STRFeatureListItemEmbed () {
 
 		it('sets src', function () {
