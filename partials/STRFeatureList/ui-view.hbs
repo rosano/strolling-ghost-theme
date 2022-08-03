@@ -1,0 +1,26 @@
+<div class="STRFeatureList">
+
+<h1 class="STRFeatureListHeading">Featured content</h1>
+
+{{#get "posts" filter="featured:true" include="tags"}}
+
+{{#foreach posts}}
+
+<div class="STRFeatureListItem">
+
+<iframe class="STRFeatureListItemEmbed" width="100%" height="{{#has tag="#Audio"}}180{{else}}300{{/has}}" frameborder="no" scrolling="no" seamless src="https://go.rosano.ca/strolling-{{slug}}-{{#has tag="#Audio"}}audio{{else}}video{{/has}}"></iframe>
+
+<div class="STRFeatureListItemTag OLSKCommonCard">
+	<img class="STRFeatureListItemTagImage" src="{{ primary_tag.feature_image }}" aria-hidden="true" />
+	<a class="STRFeatureListItemTagLink" href="{{ primary_tag.url }}">More from {{ primary_tag.name }}</a>
+</div>
+
+</div>
+
+{{/foreach}}
+
+{{pagination}}
+
+{{/get}}
+
+</div>

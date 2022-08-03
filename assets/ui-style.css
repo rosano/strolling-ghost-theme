@@ -31,6 +31,10 @@ h1 {
 	margin-right: 4px;
 }
 
+.STRFeatureListItem {
+	margin-bottom: var(--OLSKSectionSpacing);
+}
+
 .STRPreview {
 	margin-top: 100px;
 	align-items: flex-start;
