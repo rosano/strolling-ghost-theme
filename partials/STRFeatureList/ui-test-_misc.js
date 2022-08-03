@@ -28,10 +28,6 @@ describe('STRFeatureList_Misc', function () {
 			browser.assert.hasClass(STRFeatureListItemTag, 'OLSKCommonCard');
 		});
 
-		it('classes OLSKCommonCrownCard', function () {
-			browser.assert.hasClass(STRFeatureListItemTag, 'OLSKCommonCrownCard');
-		});
-
 	});
 
 	describe('STRFeatureListItemTagImage', function test_STRFeatureListItemTagImage () {
