@@ -9,6 +9,10 @@ a {
 	color: #ff76ad !important;
 }
 
+h1 {
+	border-bottom: 0 !important;
+}
+
 .STRAboveCrown {
 	color: inherit;
 
@@ -25,10 +29,6 @@ a {
 
 .STRIntroPlatforms a {
 	margin-right: 4px;
-}
-
-.STRRandomHeading {
-	border-bottom: 0 !important;
 }
 
 .STRPreview {
