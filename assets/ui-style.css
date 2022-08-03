@@ -31,6 +31,10 @@ h1 {
 	margin-right: 4px;
 }
 
+.STRRandomHeading {
+	text-align: center;
+}
+
 .STRFeatureListItem {
 	margin-bottom: 100px;
 }
