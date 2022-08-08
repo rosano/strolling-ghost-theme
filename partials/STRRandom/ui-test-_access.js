@@ -4,6 +4,7 @@ Object.entries({
 	STRRandom: '.STRRandom',
 	STRRandomHeading: '.STRRandomHeading',
 	STRRandomEmbed: '.STRRandomEmbed',
+	STRRandomBlurb: '.STRRandomBlurb',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -24,6 +25,10 @@ describe('STRRandom_Access', function () {
 	
 	it('shows STRRandomEmbed', function() {
 		browser.assert.elements(STRRandomEmbed, 1);
+	});
+	
+	it('shows STRRandomBlurb', function() {
+		browser.assert.elements(STRRandomBlurb, 1);
 	});
 
 });

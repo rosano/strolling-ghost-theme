@@ -22,4 +22,12 @@ describe('STRRandom_Misc', function () {
 
 	});
 
+	describe('STRRandomBlurb', function test_STRRandomBlurb () {
+
+		it('sets text', function () {
+			browser.assert.text(STRRandomBlurb, '(with small snippets selected randomly)');
+		});
+	
+	});
+
 });
