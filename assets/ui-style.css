@@ -36,6 +36,7 @@ h1 {
 }
 
 .STRRandomEmbed {
+	display: block;
 	border: 10px solid #ff76ad;
 	border-radius: 10px;
 }
