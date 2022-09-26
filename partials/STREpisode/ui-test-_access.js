@@ -41,8 +41,4 @@ describe('STREpisode_Access', function () {
 		browser.assert.elements(STREpisodeDiscussionHeading, 1);
 	});
 	
-	it('shows ROCOForum', function() {
-		browser.assert.elements('.ROCOForum', 1);
-	});
-	
 });
