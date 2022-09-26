@@ -21,12 +21,12 @@ describe('STRBelow_Access', function () {
 		browser.assert.elements(STRBelow, 1);
 	});
 	
-	it('shows STRIntro', function() {
-		browser.assert.elements('.STRIntro', 1);
-	});
-	
 	it('shows ROCOGazette', function() {
 		browser.assert.elements('.ROCOGazette', 1);
+	});
+	
+	it('shows STRIntro', function() {
+		browser.assert.elements('.STRIntro', 1);
 	});
 
 	it('shows STRBelowEdit', function () {
