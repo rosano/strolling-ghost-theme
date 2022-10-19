@@ -3,6 +3,7 @@ const kDefaultRoutePath = '/all/';
 Object.entries({
 	STRAll: '.STRAll',
 	STRAllHeading: '.STRAllHeading',
+	STRAllBlurb: '.STRAllBlurb',
 	STRAllList: '.STRAllList',
 	STRAllListItem: '.STRAllListItem',
 	STRAllListItemNumber: '.STRAllListItemNumber',
@@ -34,6 +35,10 @@ describe('STRAllListItem_Access', function () {
 
 	it('shows STRAllHeading', function () {
 		browser.assert.elements(STRAllHeading, 1);
+	});
+
+	it('shows STRAllBlurb', function () {
+		browser.assert.elements(STRAllBlurb, 1);
 	});
 
 	it('shows STRAllList', function () {

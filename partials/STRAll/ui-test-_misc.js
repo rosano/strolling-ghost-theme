@@ -14,6 +14,14 @@ describe('STRAll_Misc', function () {
 	
 	});
 
+	describe('STRAllBlurb', function test_STRAllBlurb () {
+
+		it('sets text', function () {
+			browser.assert.text(STRAllBlurb, '⭐️ = members exclusive. 🔍 = uncut / extended version.');
+		});
+	
+	});
+
 	describe('STRAllListItemNumber', function test_STRAllListItemNumber () {
 
 		it('sets text', function () {
