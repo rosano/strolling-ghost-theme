@@ -198,3 +198,9 @@ h1 {
 .STRBelowLinks {
 	text-align: center;
 }
+
+/* STRAll  */
+
+.STRAll * {
+	border: none !important;
+}

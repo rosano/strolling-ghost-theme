@@ -1,0 +1,26 @@
+<div class="STRAll">
+
+<h1 class="STRAllHeading">Episode index</h1>
+
+{{#get "posts" include="tags" limit="1000"}}
+
+<table class="STRAllList">
+
+{{#foreach posts}}
+
+<tr class="STRAllListItem">
+
+<td class="STRAllListItemNumber">{{slug}}</td>
+<td><a class="STRAllListItemLink" href="{{url}}">{{title}}</a></td>
+<td class="STRAllListItemPaid" aria-text="{{#has visibility="paid"}}Members exclusive{{/has}}">{{#has visibility="paid"}}⭐️{{/has}}</td>
+<td class="STRAllListItemSpotlight" aria-text="{{#has tag="#Spotlight"}}Spotlight episode{{/has}}">{{#has tag="#Spotlight"}}🔍{{/has}}</td>
+
+</tr>
+
+{{/foreach}}
+
+</table>
+
+{{/get}}
+
+</div>
