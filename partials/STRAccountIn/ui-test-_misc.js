@@ -18,6 +18,18 @@ describe('STRAccountIn_Misc', function () {
 
 	});
 
+	describe('STRAccountInAll', function test_STRAccountInAll () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRAccountInAll, 'href', '/all');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRAccountInAll, 'All episodes.');
+		});
+
+	});
+
 	describe('STRAccountInBlurb', function test_STRAccountInBlurb () {
 
 		it('sets text', function () {

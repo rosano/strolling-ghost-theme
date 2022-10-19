@@ -2,6 +2,7 @@ const kDefaultRoutePath = '/straccountin/';
 
 Object.entries({
 	STRAccountIn: '.STRAccountIn',
+	STRAccountInAll: '.STRAccountInAll',
 	STRAccountInBlurb: '.STRAccountInBlurb',
 	STRAccountDetails: '.STRAccountDetails',
 	STRAccountDetailsLink: '.STRAccountDetailsLink',
@@ -17,6 +18,10 @@ describe('STRAccountIn_Access', function () {
 	
 	it('shows STRAccountIn', function() {
 		browser.assert.elements(STRAccountIn, 1);
+	});
+
+	it('shows STRAccountInAll', function () {
+		browser.assert.elements(STRAccountInAll, 1);
 	});
 
 	it('shows STRAccountInBlurb', function () {
