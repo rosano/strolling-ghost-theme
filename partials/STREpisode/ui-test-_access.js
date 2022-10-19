@@ -6,7 +6,6 @@ Object.entries({
 	STREpisodeDate: '.STREpisodeDate',
 	STREpisodeTitle: '.STREpisodeTitle',
 	STREpisodeContent: '.STREpisodeContent',
-	STREpisodeDiscussionHeading: '.STREpisodeDiscussionHeading',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -37,8 +36,4 @@ describe('STREpisode_Access', function () {
 		browser.assert.elements(STREpisodeContent, 1);
 	});
 
-	it('shows STREpisodeDiscussionHeading', function () {
-		browser.assert.elements(STREpisodeDiscussionHeading, 1);
-	});
-	
 });
