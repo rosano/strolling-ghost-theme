@@ -2,8 +2,6 @@
 
 <h1 class="STRFeatureListHeading">Featured content</h1>
 
-{{#get "posts" filter="featured:true" include="tags" limit=@config.posts_per_page}}
-
 {{#foreach posts}}
 
 <div class="STRFeatureListItem">
@@ -23,8 +21,6 @@
 </div>
 
 {{/foreach}}
-
-{{/get}}
 
 {{pagination}}
 
