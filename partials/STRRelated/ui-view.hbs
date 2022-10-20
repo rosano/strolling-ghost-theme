@@ -1,10 +1,10 @@
-{{#get "posts" limit="5" filter="tag:{{post.primary_tag.slug}}+id:-{{post.id}}" as |related|}}
+{{#get "posts" limit="5" filter="tag:{{post.primary_tag.slug}}+id:-{{post.id}}"}}
 <div class="STRRelated">
 
 <h2 class="STRRelatedHeading">Related</h2>
 
 <ul>
-{{#foreach related}}
+{{#foreach posts}}
 <li class="STRRelatedListItem">
 	<a class="STRRelatedListItemLink" href="{{url}}">{{title}}</a>
 </li>
