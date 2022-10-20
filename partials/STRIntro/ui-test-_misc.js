@@ -86,4 +86,85 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
+	describe('STRIntroPlatformsMore', function test_STRIntroPlatformsMore () {
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsMore, 'More');
+		});
+
+		context('click', function () {
+			
+			before(function () {
+				return browser.click(STRIntroPlatformsMore);
+			});
+
+			it('classes STRIntroPlatformsShowExtra', function () {
+				browser.assert.hasClass(STRIntroPlatforms, 'STRIntroPlatformsShowExtra');
+			});
+		
+		});
+	
+	});
+
+	describe('STRIntroPlatformsExtraInstagram', function test_STRIntroPlatformsExtraInstagram () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraInstagram, 'href', '/instagram');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraInstagram, 'Instagram');
+		});
+	
+	});
+	
+	describe('STRIntroPlatformsExtraFacebook', function test_STRIntroPlatformsExtraFacebook () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraFacebook, 'href', '/facebook');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraFacebook, 'Facebook');
+		});
+	
+	});
+	
+	describe('STRIntroPlatformsExtraTwitter', function test_STRIntroPlatformsExtraTwitter () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraTwitter, 'href', 'https://twitter.com/rosano');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraTwitter, 'Twitter');
+		});
+	
+	});
+	
+	describe('STRIntroPlatformsExtraTikTok', function test_STRIntroPlatformsExtraTikTok () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraTikTok, 'href', '/tiktok');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraTikTok, 'TikTok');
+		});
+	
+	});
+	
+	describe('STRIntroPlatformsExtraMastodon', function test_STRIntroPlatformsExtraMastodon () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraMastodon, 'href', 'https://merveilles.town/@rosano');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraMastodon, 'Mastodon');
+		});
+	
+	});
+	
+
 });

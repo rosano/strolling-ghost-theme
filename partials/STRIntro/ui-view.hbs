@@ -9,8 +9,31 @@
 			<a class="STRIntroPlatformsSpotify" href="/spotify">Spotify</a>
 			<a class="STRIntroPlatformsYouTube" href="/youtube">YouTube</a>
 			<a class="STRIntroPlatformsFeed" href="/podcast.rss">RSS Feed</a>
+			<a class="STRIntroPlatformsMore" href="#" onclick="document.querySelector('.STRIntroPlatforms').classList.add('STRIntroPlatformsShowExtra')">More</a>
+			<span class="STRIntroPlatformsExtra">
+				<br>
+				<a class="STRIntroPlatformsExtraInstagram" href="/instagram">Instagram</a>
+				<a class="STRIntroPlatformsExtraFacebook" href="/facebook">Facebook</a>
+				<a class="STRIntroPlatformsExtraTwitter" href="https://twitter.com/rosano">Twitter</a>
+				<a class="STRIntroPlatformsExtraTikTok" href="/tiktok">TikTok</a>
+				<a class="STRIntroPlatformsExtraMastodon" href="https://merveilles.town/@rosano">Mastodon</a>
+			</span>
 		</small>
 	</p>
 </div>
+
+<style type="text/css">
+.STRIntroPlatforms .STRIntroPlatformsExtra {
+	display: none;
+}
+
+.STRIntroPlatformsShowExtra .STRIntroPlatformsExtra  {
+	display: unset;
+}
+
+.STRIntroPlatformsShowExtra .STRIntroPlatformsMore  {
+	display: none;
+}
+</style>
 
 </div>
