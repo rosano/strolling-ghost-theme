@@ -29,6 +29,7 @@ h1 {
 
 .STRIntroBlurb {
 	font-family: var(--OLSKCommonHeadingFontFamily);
+	font-weight: bold;
 }
 
 .STRIntroPlatforms a {
