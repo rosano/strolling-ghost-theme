@@ -68,7 +68,7 @@ describe('STRAll_Misc', function () {
 
 	describe('STRAllListItemPaid_Public', function test_STRAllListItemPaid_Public () {
 
-		it('sets arie-text', function () {
+		it('sets aria-text', function () {
 			browser.assert.attribute(STRAllListItemPaid_Public, 'aria-text', '');
 		});
 
@@ -92,7 +92,7 @@ describe('STRAll_Misc', function () {
 
 	describe('STRAllListItemSpotlight_Public', function test_STRAllListItemSpotlight_Public () {
 
-		it('sets arie-text', function () {
+		it('sets aria-text', function () {
 			browser.assert.attribute(STRAllListItemSpotlight_Public, 'aria-text', '');
 		});
 
