@@ -17,11 +17,11 @@ describe('STRFeatureList_Misc', function () {
 	describe('STRFeatureListItemTitle', function test_STRFeatureListItemTitle () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRFeatureListItemTitle, 'href', '/0000/');
+			browser.assert.attribute(STRFeatureListItemTitle_Example, 'href', '/0002/');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRFeatureListItemTitle, 'STREpisodeTitleText');
+			browser.assert.text(STRFeatureListItemTitle_Example, 'STRMembersEpisodeTitleText');
 		});
 	
 	});
@@ -29,7 +29,7 @@ describe('STRFeatureList_Misc', function () {
 	describe('STRFeatureListItemEmbed', function test_STRFeatureListItemEmbed () {
 
 		it('sets src', function () {
-			browser.assert.attribute(STRFeatureListItemEmbed, 'src', 'https://go.rosano.ca/strolling-0000-video');
+			browser.assert.attribute(STRFeatureListItemEmbed_Example, 'src', 'https://go.rosano.ca/strolling-0002-video');
 		});
 	
 	});
@@ -37,7 +37,7 @@ describe('STRFeatureList_Misc', function () {
 	describe('STRFeatureListItemTag', function test_STRFeatureListItemTag () {
 
 		it('classes OLSKCommonCard', function () {
-			browser.assert.hasClass(STRFeatureListItemTag, 'OLSKCommonCard');
+			browser.assert.hasClass(STRFeatureListItemTag_Example, 'OLSKCommonCard');
 		});
 
 	});
@@ -57,11 +57,11 @@ describe('STRFeatureList_Misc', function () {
 	describe('STRFeatureListItemTagLink', function test_STRFeatureListItemTagLink () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRFeatureListItemTagLink, 'href', /\/tag\/STRTag/i);
+			browser.assert.attribute(STRFeatureListItemTagLink_Example, 'href', /\/tag\/STRTag/i);
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRFeatureListItemTagLink, 'More from STRTag');
+			browser.assert.text(STRFeatureListItemTagLink_Example, 'More from STRTag');
 		});
 
 	});

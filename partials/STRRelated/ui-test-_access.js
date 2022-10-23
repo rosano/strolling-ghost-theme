@@ -5,11 +5,14 @@ Object.entries({
 	STRRelatedHeading: '.STRRelatedHeading',
 	STRRelatedListItem: '.STRRelatedListItem',
 	STRRelatedListItemLink: '.STRRelatedListItemLink',
+	STRRelatedListItemLink_Example: '.STRRelatedListItem:nth-of-type(1) .STRRelatedListItemLink',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
 
 describe('STRRelated_Access', function () {
+
+	const postCount = 2;
 
 	before(function() {
 		return browser.visit(kDefaultRoutePath);
@@ -24,11 +27,11 @@ describe('STRRelated_Access', function () {
 	});
 	
 	it('shows STRRelatedListItem', function() {
-		browser.assert.elements(STRRelatedListItem, 1);
+		browser.assert.elements(STRRelatedListItem, postCount);
 	});
 
 	it('shows STRRelatedListItemLink', function () {
-		browser.assert.elements(STRRelatedListItemLink, 1);
+		browser.assert.elements(STRRelatedListItemLink, postCount);
 	});
 
 });

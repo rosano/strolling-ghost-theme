@@ -17,11 +17,11 @@ describe('STRRelated_Misc', function () {
 	describe('STRRelatedListItemLink', function test_STRRelatedListItemLink () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRRelatedListItemLink, 'href', '/0000/');
+			browser.assert.attribute(STRRelatedListItemLink_Example, 'href', '/0002/');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRRelatedListItemLink, 'STREpisodeTitleText');
+			browser.assert.text(STRRelatedListItemLink_Example, 'STRMembersEpisodeTitleText');
 		});
 	
 	});
