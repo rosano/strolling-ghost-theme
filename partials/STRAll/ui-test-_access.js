@@ -17,6 +17,8 @@ Object.entries({
 	STRAllListItemSpotlight: '.STRAllListItemSpotlight',
 	STRAllListItemSpotlight_Members: 'tr:nth-of-type(1) .STRAllListItemSpotlight',
 	STRAllListItemSpotlight_Public: 'tr:nth-of-type(2) .STRAllListItemSpotlight',
+	STRAllListItemSingle: '.STRAllListItemSingle',
+	STRAllListItemSingle_Example: 'tr:nth-of-type(2) .STRAllListItemSingle',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -91,6 +93,14 @@ describe('STRAllListItem_Access', function () {
 
 	it('shows STRAllListItemSpotlight_Public', function () {
 		browser.assert.elements(STRAllListItemSpotlight_Public, 1);
+	});
+
+	it('shows STRAllListItemSingle', function () {
+		browser.assert.elements(STRAllListItemSingle, postCount);
+	});
+
+	it('shows STRAllListItemSingle_Example', function () {
+		browser.assert.elements(STRAllListItemSingle_Example, 1);
 	});
 
 });

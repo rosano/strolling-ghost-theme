@@ -17,7 +17,7 @@ describe('STRAll_Misc', function () {
 	describe('STRAllBlurb', function test_STRAllBlurb () {
 
 		it('sets text', function () {
-			browser.assert.text(STRAllBlurb, '⭐️ = members exclusive. 🔍 = uncut / extended version.');
+			browser.assert.text(STRAllBlurb, '⭐️ = members exclusive. 🔍 = uncut / extended version. 1️⃣ = single.');
 		});
 	
 	});
@@ -98,6 +98,18 @@ describe('STRAll_Misc', function () {
 
 		it('sets text', function () {
 			browser.assert.text(STRAllListItemSpotlight_Public, '');
+		});
+	
+	});
+
+	describe('STRAllListItemSingle', function test_STRAllListItemSingle () {
+
+		it('sets aria-text', function () {
+			browser.assert.attribute(STRAllListItemSingle_Example, 'aria-text', 'Single episode');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRAllListItemSingle_Example, '1️⃣');
 		});
 	
 	});
