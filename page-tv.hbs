@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+<head>
+
+<title>{{meta_title}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+
+<style type="text/css">
+
+html, body, .STRRandom {
+	display: block;
+	width: vh100;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+.STRRandom :not(.STRRandomEmbed) {
+	display: none;
+}
+
+.STRRandomEmbed {
+	height: 100%;
+}
+</style>
+
+</head>
+<body>
+
+{{> STRRandom/ui-view}}
+
+</body>
+</html>
