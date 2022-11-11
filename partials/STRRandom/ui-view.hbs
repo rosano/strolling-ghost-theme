@@ -7,9 +7,8 @@
 <small class="STRRandomBlurb">(these snippets are selected at random)</small>
 
 <script type="text/javascript">
-let player;
 
-const shuffle = function (inputData) {
+const uShuffle = function (inputData) {
   return inputData
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
@@ -21,14 +20,14 @@ const mod = {
 	// MESSAGE
 
 	MessageYouTubeAPIReady () {
-		player = new YT.Player('youtube-player', {
+		mod._ValuePlayer = new YT.Player('youtube-player', {
 			events: {
 				onReady () {
-					player.cuePlaylist(shuffle(player.getPlaylist()));
+					mod._ValuePlayer.loadPlaylist(uShuffle(mod._ValueAllVideoIDs));
 
 					window.setTimeout(function () {
-						player.cuePlaylist(shuffle(player.getPlaylist()));
-					}, 1000);
+						mod._ValuePlayer.loadPlaylist(uShuffle(mod._ValueAllVideoIDs));
+					}, 3000);
 				},
 			},
 		});
