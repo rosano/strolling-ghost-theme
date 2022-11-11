@@ -22,15 +22,15 @@ const mod = {
 
 	MessageYouTubeAPIReady () {
 		player = new YT.Player('youtube-player', {
-		    events: {
-		      onReady () {
-		      	player.cuePlaylist(shuffle(player.getPlaylist()));
-		      	
-		      	window.setTimeout(function () {
-		      	  player.cuePlaylist(shuffle(player.getPlaylist()));
-		      	}, 1000)
-		      },
-		    }
+			events: {
+				onReady () {
+					player.cuePlaylist(shuffle(player.getPlaylist()));
+
+					window.setTimeout(function () {
+						player.cuePlaylist(shuffle(player.getPlaylist()));
+					}, 1000);
+				},
+			},
 		});
 	},
 
