@@ -22,6 +22,30 @@ describe('STRRandom_Misc', function () {
 
 	});
 
+	describe('STRRandomButtonsPrevious', function test_STRRandomButtonsPrevious () {
+
+		it('classes OLSKDecorPressCall', function () {
+			browser.assert.hasClass(STRRandomButtonsPrevious, 'OLSKDecorPressCall');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRRandomButtonsPrevious, 'previous');
+		});
+	
+	});
+
+	describe('STRRandomButtonsNext', function test_STRRandomButtonsNext () {
+
+		it('classes OLSKDecorPressCall', function () {
+			browser.assert.hasClass(STRRandomButtonsNext, 'OLSKDecorPressCall');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRRandomButtonsNext, 'new snippet');
+		});
+	
+	});
+
 	describe('STRRandomBlurb', function test_STRRandomBlurb () {
 
 		it('sets text', function () {

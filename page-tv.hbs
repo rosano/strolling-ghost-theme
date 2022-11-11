@@ -18,13 +18,29 @@ html, body, .STRRandom {
 
 body {
 	margin: 0;
+	background: black;
 }
-.STRRandom :not(.STRRandomEmbed) {
+
+.STRRandomButtons button {
+	background: white !important;
+}
+
+.STRRandom > :not(.STRRandomPlayer) {
 	display: none;
 }
 
-.STRRandomEmbed {
+.STRRandomPlayer {
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.STRRandomEmbed {
+	flex-grow: 1;
+}
+
+.STRRandomPlayer button {
+	flex-basis: 40px;
 }
 
 .OLSKBanner {
