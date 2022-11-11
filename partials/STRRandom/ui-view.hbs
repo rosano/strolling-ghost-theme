@@ -50,7 +50,12 @@ const mod = {
 			return mod._CommandLoadVideo(mod._ValueNextVideoIDs.pop());
 		}
 
-		const item = mod.DataNewVideoID();
+		let item = mod.DataNewVideoID();
+
+		if (!item) {
+			mod._ValueNextVideoIDs = uShuffle(mod._ValuePreviousVideoIDs.splice(0));
+			item = mod._ValueNextVideoIDs.pop();
+		}
 
 		mod._ValuePreviousVideoIDs.push(item);
 
@@ -93,6 +98,12 @@ const mod = {
 					// window.setTimeout(function () {
 					// 	mod._ValuePlayer.loadPlaylist(uShuffle(mod._ValueAllVideoIDs));
 					// }, 3000);
+				},
+
+				onStateChange (event) {
+					if (event.data == YT.PlayerState.ENDED) {
+						return mod.CommandNextVideo();
+					}
 				},
 			},
 		});
