@@ -34,4 +34,12 @@ describe('STRPreview_Misc', function () {
 
 	});
 
+	describe('STRPreviewLinkPaid', function test_STRPreviewLinkPaid () {
+
+		it('sets text', function () {
+			browser.assert.text(STRPreviewLinkPaid, '★ members exclusive');
+		});
+	
+	});
+
 });

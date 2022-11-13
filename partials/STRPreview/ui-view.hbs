@@ -5,7 +5,13 @@
 <div class="STRPreview">
 
 <a class="STRPreviewLink" href="{{url}}" aria-text="{{title}}" style="background-image: url('{{ feature_image }}');">
-	<time class="STRPreviewDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
+	<div class="STRPreviewLinkBar">
+		{{#has visibility="paid"}}
+			<span class="STRPreviewLinkPaid"><span aria-hidden>★</span> members exclusive</span>
+		{{/has}}
+
+		<time class="STRPreviewDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
+	</div>
 </a>
 
 </div>
@@ -39,14 +45,20 @@
 	overflow: hidden;
 }
 
-.STRPreviewDate {
+.STRPreviewLinkBar {
 	display: block;
 	padding: 3px;
 	background: rgba(0, 0, 0, 0.75);
 	color: white;
 	text-shadow: 1px 1px 0 black; 
 	font-size: 8pt;
+	display: flex;
+	justify-content: space-between;
+}
+
+.STRPreviewDate {
 	text-align: right;
 	opacity: 0.7;
+	flex-grow: 1;
 }
 </style>
