@@ -85,7 +85,7 @@ describe('STRIntro_Misc', function () {
 	describe('STRIntroPlatformsMore', function test_STRIntroPlatformsMore () {
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroPlatformsMore, 'More');
+			browser.assert.text(STRIntroPlatformsMore, 'More…');
 		});
 
 		context('click', function () {
