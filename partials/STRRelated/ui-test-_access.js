@@ -3,9 +3,6 @@ const kDefaultRoutePath = '/strcontent';
 Object.entries({
 	STRRelated: '.STRRelated',
 	STRRelatedHeading: '.STRRelatedHeading',
-	STRRelatedListItem: '.STRRelatedListItem',
-	STRRelatedListItemLink: '.STRRelatedListItemLink',
-	STRRelatedListItemLink_Example: '.STRRelatedListItem:nth-of-type(1) .STRRelatedListItemLink',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -26,12 +23,8 @@ describe('STRRelated_Access', function () {
 		browser.assert.elements(STRRelatedHeading, 1);
 	});
 	
-	it('shows STRRelatedListItem', function() {
-		browser.assert.elements(STRRelatedListItem, postCount);
-	});
-
-	it('shows STRRelatedListItemLink', function () {
-		browser.assert.elements(STRRelatedListItemLink, postCount);
+	it('shows STRPreview', function() {
+		browser.assert.elements('.STRPreview', postCount);
 	});
 
 });

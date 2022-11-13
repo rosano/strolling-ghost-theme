@@ -3,13 +3,13 @@
 
 <h2 class="STRRelatedHeading">Related</h2>
 
-<ul>
-{{#foreach posts}}
-<li class="STRRelatedListItem">
-	<a class="STRRelatedListItemLink" href="{{url}}">{{title}}</a>
-</li>
-{{/foreach}}
-</ul>
+{{> STRPreview/ui-view}}
 
 </div>
 {{/get}}
+
+<style>
+.STRPagination {
+	display: none;
+}
+</style>
