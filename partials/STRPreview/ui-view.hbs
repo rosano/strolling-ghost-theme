@@ -17,20 +17,23 @@
 {{pagination}}
 
 <style>
-.STRPreview {
-	margin: 20px;
+.STRPreviewList {
+	display: flex;
+	flex-wrap: wrap;
+}
 
-	float: left;
+.STRPreview {
+	margin: 0 20px 20px 0;
 }
 
 .STRPreviewLink {
 	display: inline-block;
-	width: 225px;
-	height: 125px;
+	width: 275px;
+	height: 150px;
 	border-radius: 10px;
 
 	background-position: center;
-	background-size: 280px;
+	background-size: 300px;
 	text-decoration: none;
 
 	overflow: hidden;
@@ -39,7 +42,7 @@
 .STRPreviewDate {
 	display: block;
 	padding: 3px;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.75);
 	color: white;
 	text-shadow: 1px 1px 0 black; 
 	font-size: 8pt;
