@@ -135,8 +135,28 @@ mod.LifecycleModuleDidLoad();
 window.onYouTubeIframeAPIReady = mod.MessageYouTubeAPIReady;
 </script>
 
+<style>
+.STRRandom {
+	text-align: center;
+}
 
-<style type="text/css">
+.STRRandomEmbed {
+	display: block;
+	border: 10px solid #ff76ad;
+	border-radius: 10px;
+}
+
+@media (min-width: 750px) {
+
+	.STRRandomEmbed {
+		width: 120%;
+		height: 480px;
+		position: relative;
+		left: -12.5%;
+	}
+
+}
+
 .STRRandomButtons {
 	display: flex;
 	width: 100%;

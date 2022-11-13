@@ -25,3 +25,39 @@
 {{pagination}}
 
 </div>
+
+<style>
+.STRFeatureHeading {
+	text-align: center;
+}
+
+.STRFeatureListItem {
+	margin-bottom: 100px;
+}
+
+.STRFeatureListItemTag {
+	margin-top: var(--OLSKSectionSpacing);
+}
+
+.STRFeatureListItemTagImage {
+	border-radius: 10px;
+}
+
+.STRFeatureListItemTitle, .STRPreviewTitle, .STREpisodeTitle, .STRGenericTitle {
+  font-family: var(--OLSKCommonHeadingFontFamily);
+  color: unset !important;
+	font-size: 28px;
+}
+
+.STRFeatureList a, .STRPreview a, .STREpisode a, .STRGenericTitle a {
+	text-decoration: none;
+}
+
+@media (min-width: 450px) {
+
+	.STRFeatureListItemTitle, .STRPreviewTitle {
+		display: none;
+	}
+
+}
+</style>
