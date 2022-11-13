@@ -2,46 +2,12 @@
 
 <h1 class="STRFeatureListHeading">Featured content</h1>
 
-{{#foreach posts}}
-
-<div class="STRFeatureListItem">
-
-<a class="STRFeatureListItemTitle" href="{{url}}">{{title}}</a>
-
-<iframe class="STRFeatureListItemEmbed" width="100%" height="{{#has tag="#Audio"}}180{{else}}300{{/has}}" frameborder="no" scrolling="no" seamless src="https://go.rosano.ca/strolling-{{slug}}-{{#has tag="#Audio"}}audio{{else}}video{{/has}}"></iframe>
-
-</div>
-
-{{/foreach}}
-
-{{pagination}}
+{{> STRPreview/ui-view}}
 
 </div>
 
 <style>
 .STRFeatureHeading {
 	text-align: center;
-}
-
-.STRFeatureListItem {
-	margin-bottom: 100px;
-}
-
-.STRFeatureListItemTitle, .STRPreviewTitle, .STREpisodeTitle, .STRGenericTitle {
-  font-family: var(--OLSKCommonHeadingFontFamily);
-  color: unset !important;
-	font-size: 28px;
-}
-
-.STRFeatureList a, .STRPreview a, .STREpisode a, .STRGenericTitle a {
-	text-decoration: none;
-}
-
-@media (min-width: 450px) {
-
-	.STRFeatureListItemTitle, .STRPreviewTitle {
-		display: none;
-	}
-
 }
 </style>
