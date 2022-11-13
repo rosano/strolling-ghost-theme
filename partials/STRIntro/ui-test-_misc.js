@@ -8,10 +8,6 @@ describe('STRIntro_Misc', function () {
 
 	describe('STRIntro', function test_STRIntro () {
 
-		it('classes OLSKLanding', function () {
-			browser.assert.hasClass(STRIntro, 'OLSKLanding');
-		});
-
 		it('classes OLSKCommonCard', function () {
 			browser.assert.hasClass(STRIntro, 'OLSKCommonCard');
 		});
