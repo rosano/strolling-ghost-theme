@@ -1,5 +1,8 @@
 <div class="STRVitrine">
 
+{{#is 'home'}}
+
+
 {{> STRIntro/ui-view}}
 
 {{#if @member}}
@@ -9,6 +12,8 @@
 {{/if}}
 
 {{> STRRandom/ui-view}}
+
+{{/is}}
 
 {{> STRFeatured/ui-view}}
 
