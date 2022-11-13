@@ -5,6 +5,7 @@
 			<span class="STRAboveCrownTitle">{{@site.title}}</span>
 		</section>
 	</a>
+	<button class="STRAboveSearch OLSKDecorPressCall" data-ghost-search>Search episodes</button>
 </div>
 
 {{#post}}
@@ -24,9 +25,14 @@
 {{/is}}
 
 <style>
+.STRAbove {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .STRAboveCrown {
 	color: inherit;
-
 	text-decoration: none;
 }
 
@@ -36,5 +42,9 @@
 
 .STRAboveCrownTitle {
 	font-size: 25px;
+}
+
+.STRAboveSearch {
+	--OLSKCommonForeground: #ff76ad;
 }
 </style>

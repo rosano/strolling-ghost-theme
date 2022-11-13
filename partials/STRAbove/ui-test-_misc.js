@@ -38,4 +38,16 @@ describe('STRAbove_Misc', function () {
 	
 	});
 
+	describe('STRAboveSearch', function test_STRAboveSearch () {
+
+		it('sets attribute', function () {
+			browser.assert.attribute(STRAboveSearch, 'data-ghost-search', '');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRAboveSearch, 'Search episodes');
+		});
+	
+	});
+
 });

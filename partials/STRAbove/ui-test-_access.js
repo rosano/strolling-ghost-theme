@@ -5,6 +5,7 @@ Object.entries({
 	STRAboveCrown: '.STRAboveCrown',
 	STRAboveCrownImage: '.STRAboveCrownImage',
 	STRAboveCrownTitle: '.STRAboveCrownTitle',
+	STRAboveSearch: '.STRAboveSearch',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -29,6 +30,10 @@ describe('STRAbove_Access', function () {
 	
 	it('shows STRAboveCrownTitle', function() {
 		browser.assert.elements(STRAboveCrownTitle, 1);
+	});
+
+	it('shows STRAboveSearch', function () {
+		browser.assert.elements(STRAboveSearch, 1);
 	});
 
 });
