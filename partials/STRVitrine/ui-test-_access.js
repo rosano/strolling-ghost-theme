@@ -28,8 +28,8 @@ describe('STRVitrine_Access', function () {
 		browser.assert.elements('.STRRandom', 1);
 	});
 
-	it('shows STRFeatureList', function () {
-		browser.assert.elements('.STRFeatureList', 1);
+	it('shows STRFeatured', function () {
+		browser.assert.elements('.STRFeatured', 1);
 	});
 
 });

@@ -1,13 +1,13 @@
 const kDefaultRoutePath = '/';
 
 Object.entries({
-	STRFeatureList: '.STRFeatureList',
-	STRFeatureListHeading: '.STRFeatureListHeading',
+	STRFeatured: '.STRFeatured',
+	STRFeaturedHeading: '.STRFeaturedHeading',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
 
-describe('STRFeatureListItem_Access', function () {
+describe('STRFeaturedItem_Access', function () {
 
 	const postCount = 2;
 
@@ -15,12 +15,12 @@ describe('STRFeatureListItem_Access', function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
-	it('shows STRFeatureList', function () {
-		browser.assert.elements(STRFeatureList, 1);
+	it('shows STRFeatured', function () {
+		browser.assert.elements(STRFeatured, 1);
 	});
 
-	it('shows STRFeatureListHeading', function () {
-		browser.assert.elements(STRFeatureListHeading, 1);
+	it('shows STRFeaturedHeading', function () {
+		browser.assert.elements(STRFeaturedHeading, 1);
 	});
 	
 	it('shows STRPreview', function() {
