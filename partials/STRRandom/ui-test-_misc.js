@@ -46,12 +46,4 @@ describe('STRRandom_Misc', function () {
 	
 	});
 
-	describe('STRRandomBlurb', function test_STRRandomBlurb () {
-
-		it('sets text', function () {
-			browser.assert.text(STRRandomBlurb, '(these snippets are selected at random)');
-		});
-	
-	});
-
 });

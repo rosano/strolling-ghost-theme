@@ -6,7 +6,6 @@ Object.entries({
 	STRRandomEmbed: '.STRRandomEmbed',
 	STRRandomButtonsPrevious: '.STRRandomButtonsPrevious',
 	STRRandomButtonsNext: '.STRRandomButtonsNext',
-	STRRandomBlurb: '.STRRandomBlurb',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -37,8 +36,4 @@ describe('STRRandom_Access', function () {
 		browser.assert.elements(STRRandomButtonsNext, 1);
 	});
 	
-	it('shows STRRandomBlurb', function() {
-		browser.assert.elements(STRRandomBlurb, 1);
-	});
-
 });
