@@ -30,18 +30,6 @@ describe('STREpisode_Misc', function () {
 	
 	});
 
-	describe('STREpisodeTitle', function test_STREpisodeTitle () {
-
-		it('sets href', function () {
-			browser.assert.attribute(STREpisodeTitle, 'href', '/0000/');
-		});
-
-		it('sets text', function () {
-			browser.assert.text(STREpisodeTitle, 'STREpisodeTitleText');
-		});
-	
-	});
-
 	describe('STREpisodeContent', function test_STREpisodeContent () {
 
 		it('sets text', function () {
