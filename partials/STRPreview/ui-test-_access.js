@@ -3,13 +3,9 @@ const kDefaultRoutePath = '/tag/strtag/';
 Object.entries({
 	STRPreview: '.STRPreview',
 	STRPreviewDate: '.STRPreviewDate',
-	STRPreviewDate_Example: '.STRPreview:nth-of-type(3) .STRPreviewDate',
-	STRPreviewTitle: '.STRPreviewTitle',
-	STRPreviewTitle_Example: '.STRPreview:nth-of-type(3) .STRPreviewTitle',
-	STRPreviewEmbed: '.STRPreviewEmbed',
-	STRPreviewEmbed_Example: '.STRPreview:nth-of-type(3) .STRPreviewEmbed',
-	STRPreviewNotes: '.STRPreviewNotes',
-	STRPreviewNotes_Example: '.STRPreview:nth-of-type(3) .STRPreviewNotes',
+	STRPreviewDate_Example: '.STRPreview:nth-of-type(1) .STRPreviewDate',
+	STRPreviewLink: '.STRPreviewLink',
+	STRPreviewLink_Example: '.STRPreview:nth-of-type(1) .STRPreviewLink',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -23,25 +19,17 @@ describe('STRPreview_Access', function () {
 	});
 	
 	it('shows STRPreview', function() {
-		browser.assert.elements(STRPreview, 2);
+		browser.assert.elements(STRPreview, postCount);
 	});
 	
 	it('shows STRPreviewDate', function() {
-		browser.assert.elements(STRPreviewDate, 2);
+		browser.assert.elements(STRPreviewDate, postCount);
 	});
 	
-	it('shows STRPreviewTitle', function() {
-		browser.assert.elements(STRPreviewTitle, 2);
+	it('shows STRPreviewLink', function() {
+		browser.assert.elements(STRPreviewLink, postCount);
 	});
 	
-	it('shows STRPreviewEmbed', function() {
-		browser.assert.elements(STRPreviewEmbed, 2);
-	});
-	
-	it('shows STRPreviewNotes', function() {
-		browser.assert.elements(STRPreviewNotes, 2);
-	});
-
 	it('shows STRPagination', function () {
 		browser.assert.elements('.STRPagination', 1);
 	});

@@ -1,25 +1,49 @@
+<div class="STRPreviewList">
+
 {{#foreach posts}}
 
 <div class="STRPreview">
 
-<p>
+<a class="STRPreviewLink" href="{{url}}" aria-text="{{title}}" style="background-image: url('{{ feature_image }}');">
 	<time class="STRPreviewDate" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time>
-</p>
-<a class="STRPreviewTitle" href="{{url}}">{{title}}</a>
-<iframe class="STRPreviewEmbed" width="100%" height="{{#has tag="#Audio"}}180{{else}}300{{/has}}" frameborder="no" scrolling="no" seamless src="https://go.rosano.ca/strolling-{{slug}}-{{#has tag="#Audio"}}audio{{else}}video{{/has}}"></iframe>
-<p>
-	<a class="STRPreviewNotes" href="{{url}}">→ {{slug}} episode notes</a>
-</p>
+</a>
 
 </div>
 
 {{/foreach}}
 
+</div>
+
 {{pagination}}
 
 <style>
 .STRPreview {
-	margin-top: 100px;
-	align-items: flex-start;
+	margin: 20px;
+
+	float: left;
+}
+
+.STRPreviewLink {
+	display: inline-block;
+	width: 225px;
+	height: 125px;
+	border-radius: 10px;
+
+	background-position: center;
+	background-size: 280px;
+	text-decoration: none;
+
+	overflow: hidden;
+}
+
+.STRPreviewDate {
+	display: block;
+	padding: 3px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-shadow: 1px 1px 0 black; 
+	font-size: 8pt;
+	text-align: right;
+	opacity: 0.7;
 }
 </style>

@@ -44,12 +44,12 @@ describe('STRFeatureList_Misc', function () {
 
 	describe('STRFeatureListItemTagImage', function test_STRFeatureListItemTagImage () {
 
-		it('sets src', function () {
-			browser.assert.attribute(STRFeatureListItemTagImage, 'src', /\/content\/images.*\/STRTagImage/);
-		});
-
 		it('sets aria-hidden', function () {
 			browser.assert.attribute(STRFeatureListItemTagImage, 'aria-hidden', 'true');
+		});
+
+		it('sets src', function () {
+			browser.assert.attribute(STRFeatureListItemTagImage, 'src', /\/content\/images.*\/STRTagImage/);
 		});
 
 	});
