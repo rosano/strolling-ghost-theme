@@ -34,10 +34,10 @@ describe('STRPreview_Misc', function () {
 
 	});
 
-	describe('STRPreviewLinkPaid', function test_STRPreviewLinkPaid () {
+	describe('STRPreviewLinkBarPaid', function test_STRPreviewLinkBarPaid () {
 
 		it('sets text', function () {
-			browser.assert.text(STRPreviewLinkPaid, '★ members exclusive');
+			browser.assert.text(STRPreviewLinkBarPaid, '★ members exclusive');
 		});
 	
 	});
