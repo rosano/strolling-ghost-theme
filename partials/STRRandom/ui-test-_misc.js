@@ -9,7 +9,7 @@ describe('STRRandom_Misc', function () {
 	describe('STRRandomHeading', function test_STRRandomHeading () {
 
 		it('sets text', function () {
-			browser.assert.text(STRRandomHeading, 'have a taste 📺👁👂🏼');
+			browser.assert.text(STRRandomHeading, 'have a quick taste 📺👁👂🏼');
 		});
 	
 	});
