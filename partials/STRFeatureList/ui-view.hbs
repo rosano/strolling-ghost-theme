@@ -10,14 +10,6 @@
 
 <iframe class="STRFeatureListItemEmbed" width="100%" height="{{#has tag="#Audio"}}180{{else}}300{{/has}}" frameborder="no" scrolling="no" seamless src="https://go.rosano.ca/strolling-{{slug}}-{{#has tag="#Audio"}}audio{{else}}video{{/has}}"></iframe>
 
-<div class="STRFeatureListItemTag OLSKCommonCard">
-	{{#if primary_tag.feature_image}}
-		<img class="STRFeatureListItemTagImage" src="{{ primary_tag.feature_image }}" aria-hidden="true" />
-	{{/if}}
-	
-	<a class="STRFeatureListItemTagLink" href="{{ primary_tag.url }}">More from {{ primary_tag.name }}</a>
-</div>
-
 </div>
 
 {{/foreach}}
@@ -33,14 +25,6 @@
 
 .STRFeatureListItem {
 	margin-bottom: 100px;
-}
-
-.STRFeatureListItemTag {
-	margin-top: var(--OLSKSectionSpacing);
-}
-
-.STRFeatureListItemTagImage {
-	border-radius: 10px;
 }
 
 .STRFeatureListItemTitle, .STRPreviewTitle, .STREpisodeTitle, .STRGenericTitle {

@@ -34,36 +34,4 @@ describe('STRFeatureList_Misc', function () {
 	
 	});
 
-	describe('STRFeatureListItemTag', function test_STRFeatureListItemTag () {
-
-		it('classes OLSKCommonCard', function () {
-			browser.assert.hasClass(STRFeatureListItemTag_Example, 'OLSKCommonCard');
-		});
-
-	});
-
-	describe('STRFeatureListItemTagImage', function test_STRFeatureListItemTagImage () {
-
-		it('sets aria-hidden', function () {
-			browser.assert.attribute(STRFeatureListItemTagImage, 'aria-hidden', 'true');
-		});
-
-		it('sets src', function () {
-			browser.assert.attribute(STRFeatureListItemTagImage, 'src', /\/content\/images.*\/STRTagImage/);
-		});
-
-	});
-
-	describe('STRFeatureListItemTagLink', function test_STRFeatureListItemTagLink () {
-
-		it('sets href', function () {
-			browser.assert.attribute(STRFeatureListItemTagLink_Example, 'href', /\/tag\/STRTag/i);
-		});
-
-		it('sets text', function () {
-			browser.assert.text(STRFeatureListItemTagLink_Example, 'More from STRTag');
-		});
-
-	});
-
 });

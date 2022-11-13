@@ -8,11 +8,6 @@ Object.entries({
 	STRFeatureListItemTitle_Example: '.STRFeatureListItem:nth-of-type(1) .STRFeatureListItemTitle',
 	STRFeatureListItemEmbed: '.STRFeatureListItemEmbed',
 	STRFeatureListItemEmbed_Example: '.STRFeatureListItem:nth-of-type(1) .STRFeatureListItemEmbed',
-	STRFeatureListItemTag: '.STRFeatureListItemTag',
-	STRFeatureListItemTag_Example: '.STRFeatureListItem:nth-of-type(1) .STRFeatureListItemTag',
-	STRFeatureListItemTagImage: '.STRFeatureListItemTagImage',
-	STRFeatureListItemTagLink: '.STRFeatureListItemTagLink',
-	STRFeatureListItemTagLink_Example: '.STRFeatureListItem:nth-of-type(1) .STRFeatureListItemTagLink',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -43,18 +38,6 @@ describe('STRFeatureListItem_Access', function () {
 	
 	it('shows STRFeatureListItemEmbed', function() {
 		browser.assert.elements(STRFeatureListItemEmbed, postCount);
-	});
-
-	it('shows STRFeatureListItemTag', function () {
-		browser.assert.elements(STRFeatureListItemTag, postCount);
-	});
-
-	it('shows STRFeatureListItemTagImage', function () {
-		browser.assert.elements(STRFeatureListItemTagImage, postCount);
-	});
-	
-	it('shows STRFeatureListItemTagLink', function () {
-		browser.assert.elements(STRFeatureListItemTagLink, postCount);
 	});
 	
 	it('shows STRPagination', function () {

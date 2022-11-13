@@ -36,6 +36,10 @@ describe('STREpisode_Access', function () {
 		browser.assert.elements(STREpisodeContent, 1);
 	});
 
+	it('shows STRGuest', function () {
+		browser.assert.elements('.STRGuest', 1);
+	});
+
 	it('shows STRRelated', function () {
 		browser.assert.elements('.STRRelated', 1);
 	});
