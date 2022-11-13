@@ -6,14 +6,14 @@ describe('STRPreview_Misc', function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
-	describe('STRPreviewDate', function test_STRPreviewDate () {
+	describe('STRPreviewLinkBarDate', function test_STRPreviewLinkBarDate () {
 
 		it('sets datetime', function () {
-			browser.assert.attribute(STRPreviewDate_Example, 'datetime', '2022-10-19');
+			browser.assert.attribute(STRPreviewLinkBarDate_Example, 'datetime', '2022-10-19');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRPreviewDate_Example, 'October 19th, 2022');
+			browser.assert.text(STRPreviewLinkBarDate_Example, 'October 19th, 2022');
 		});
 	
 	});

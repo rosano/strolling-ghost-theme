@@ -2,8 +2,8 @@ const kDefaultRoutePath = '/tag/strtag/';
 
 Object.entries({
 	STRPreview: '.STRPreview',
-	STRPreviewDate: '.STRPreviewDate',
-	STRPreviewDate_Example: '.STRPreview:nth-of-type(1) .STRPreviewDate',
+	STRPreviewLinkBarDate: '.STRPreviewLinkBarDate',
+	STRPreviewLinkBarDate_Example: '.STRPreview:nth-of-type(1) .STRPreviewLinkBarDate',
 	STRPreviewLink: '.STRPreviewLink',
 	STRPreviewLink_Example: '.STRPreview:nth-of-type(1) .STRPreviewLink',
 	STRPreviewLinkPaid: '.STRPreviewLinkPaid',
@@ -24,8 +24,8 @@ describe('STRPreview_Access', function () {
 		browser.assert.elements(STRPreview, postCount);
 	});
 	
-	it('shows STRPreviewDate', function() {
-		browser.assert.elements(STRPreviewDate, postCount);
+	it('shows STRPreviewLinkBarDate', function() {
+		browser.assert.elements(STRPreviewLinkBarDate, postCount);
 	});
 	
 	it('shows STRPreviewLink', function() {
