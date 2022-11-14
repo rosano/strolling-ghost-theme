@@ -10,6 +10,11 @@ routes:
     filter: featured:true,featured:false
     template: index
     data: page.all
+  /spotlight/:
+    controller: channel
+    filter: tag:spotlight
+    template: index
+    data: page.spotlight
 
 collections:
   /:

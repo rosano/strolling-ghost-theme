@@ -21,7 +21,19 @@ describe('STRExplore_Misc', function () {
 		});
 
 		it('sets href', function () {
-			browser.assert.attribute(STRExploreAll, 'href', '/all/')
+			browser.assert.attribute(STRExploreAll, 'href', '/all')
+		});
+	
+	});
+
+	describe('STRExploreSpotlight', function test_STRExploreSpotlight () {
+
+		it('sets text', function () {
+			browser.assert.text(STRExploreSpotlight, 'Extended');
+		});
+
+		it('sets href', function () {
+			browser.assert.attribute(STRExploreSpotlight, 'href', '/spotlight')
 		});
 	
 	});

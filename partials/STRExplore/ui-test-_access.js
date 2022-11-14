@@ -4,6 +4,7 @@ Object.entries({
 	STRExplore: '.STRExplore',
 	STRExploreHeading: '.STRExploreHeading',
 	STRExploreAll: '.STRExploreAll',
+	STRExploreSpotlight: '.STRExploreSpotlight',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -26,6 +27,10 @@ describe('STRExplore_Access', function () {
 
 	it('shows STRExploreAll', function () {
 		browser.assert.elements(STRExploreAll, 1);
+	});
+
+	it('shows STRExploreSpotlight', function () {
+		browser.assert.elements(STRExploreSpotlight, 1);
 	});
 	
 });
