@@ -1,0 +1,21 @@
+# Import into ghost admin, and create corresponding pages for each 'data: page.XXXXX'
+
+routes:
+  /:
+    controller: channel
+    filter: featured:true
+    template: home
+  /all/:
+    controller: channel
+    filter: featured:true,featured:false
+    template: index
+    data: page.all
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
