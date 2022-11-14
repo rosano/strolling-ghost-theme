@@ -38,4 +38,16 @@ describe('STRExplore_Misc', function () {
 	
 	});
 
+	describe('STRExploreGuests', function test_STRExploreGuests () {
+
+		it('sets text', function () {
+			browser.assert.text(STRExploreGuests, 'Guests');
+		});
+
+		it('sets href', function () {
+			browser.assert.attribute(STRExploreGuests, 'href', '/guests')
+		});
+	
+	});
+
 });
