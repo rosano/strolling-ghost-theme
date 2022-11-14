@@ -37,7 +37,7 @@ describe('STRPreview_Misc', function () {
 	describe('STRPreviewLinkBarPaid', function test_STRPreviewLinkBarPaid () {
 
 		it('sets text', function () {
-			browser.assert.text(STRPreviewLinkBarPaid, '★ members exclusive');
+			browser.assert.text(STRPreviewLinkBarPaid, '★ for members');
 		});
 	
 	});
