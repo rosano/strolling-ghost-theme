@@ -45,7 +45,7 @@ describe('STRAbove_Misc', function () {
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRAboveSearch, 'Search episodes');
+			browser.assert.text(STRAboveSearch, 'Search');
 		});
 	
 	});
