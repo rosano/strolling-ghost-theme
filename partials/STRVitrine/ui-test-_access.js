@@ -28,6 +28,10 @@ describe('STRVitrine_Access', function () {
 		browser.assert.elements('.STRRandom', 1);
 	});
 
+	it('shows STRExplore', function () {
+		browser.assert.elements('.STRExplore', 1);
+	});
+
 	it('shows STRFeatured', function () {
 		browser.assert.elements('.STRFeatured', 1);
 	});
