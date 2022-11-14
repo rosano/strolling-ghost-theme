@@ -1,13 +1,13 @@
 const kDefaultRoutePath = '/tag/strtag/';
 
 Object.entries({
-	STRTagPage: '.STRTagPage',
-	STRTagPageHeading: '.STRTagPageHeading',
+	STRIndex: '.STRIndex',
+	STRIndexHeading: '.STRIndexHeading',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
 
-describe('STRTagPage_Access', function () {
+describe('STRIndex_Access', function () {
 
 	const postCount = 2;
 
@@ -15,12 +15,12 @@ describe('STRTagPage_Access', function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 	
-	it('shows STRTagPage', function() {
-		browser.assert.elements(STRTagPage, 1);
+	it('shows STRIndex', function() {
+		browser.assert.elements(STRIndex, 1);
 	});
 	
-	it('shows STRTagPageHeading', function() {
-		browser.assert.elements(STRTagPageHeading, 1);
+	it('shows STRIndexHeading', function() {
+		browser.assert.elements(STRIndexHeading, 1);
 	});
 	
 	it('shows STRPreview', function() {

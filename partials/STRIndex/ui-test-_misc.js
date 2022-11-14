@@ -1,15 +1,15 @@
 const kDefaultRoutePath = '/tag/strtag/';
 
-describe('STRTagPage_Misc', function () {
+describe('STRIndex_Misc', function () {
 
 	before(function () {
 		return browser.visit(kDefaultRoutePath);
 	});
 
-	describe('STRTagPageHeading', function test_STRTagPageHeading () {
+	describe('STRIndexHeading', function test_STRIndexHeading () {
 
 		it('sets text', function () {
-			browser.assert.text(STRTagPageHeading, 'STRTag');
+			browser.assert.text(STRIndexHeading, 'STRTag');
 		});
 	
 	});
