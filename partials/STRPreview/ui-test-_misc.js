@@ -34,14 +34,6 @@ describe('STRPreview_Misc', function () {
 
 	});
 
-	describe('STRPreviewLinkBarSpotlight', function test_STRPreviewLinkBarSpotlight () {
-
-		it('sets text', function () {
-			browser.assert.text(STRPreviewLinkBarSpotlight, 'SPOTLIGHT');
-		});
-	
-	});
-
 	describe('STRPreviewLinkBarPaid', function test_STRPreviewLinkBarPaid () {
 
 		it('sets text', function () {

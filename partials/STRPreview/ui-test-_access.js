@@ -6,7 +6,6 @@ Object.entries({
 	STRPreviewLinkBarDate_Example: '.STRPreview:nth-of-type(1) .STRPreviewLinkBarDate',
 	STRPreviewLink: '.STRPreviewLink',
 	STRPreviewLink_Example: '.STRPreview:nth-of-type(1) .STRPreviewLink',
-	STRPreviewLinkBarSpotlight: '.STRPreviewLinkBarSpotlight',
 	STRPreviewLinkBarPaid: '.STRPreviewLinkBarPaid',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
@@ -32,10 +31,6 @@ describe('STRPreview_Access', function () {
 		browser.assert.elements(STRPreviewLink, postCount);
 	});
 	
-	it('hides STRPreviewLinkBarSpotlight', function() {
-		browser.assert.elements('.STRPreview:nth-of-type(2) .STRPreviewLink .STRPreviewLinkBarSpotlight', 0);
-	});
-	
 	it('hides STRPreviewLinkBarPaid', function() {
 		browser.assert.elements('.STRPreview:nth-of-type(2) .STRPreviewLink .STRPreviewLinkBarPaid', 0);
 	});
@@ -44,19 +39,11 @@ describe('STRPreview_Access', function () {
 		browser.assert.elements('.STRPagination', 1);
 	});
 
-	context('Spotlight', function () {
-
-		it('shows STRPreviewLinkBarSpotlight', function () {
-			browser.assert.elements(STRPreviewLinkBarSpotlight, 1);
-		});
-	
-	});
-
 	context('paid', function () {
 
 		it('shows STRPreviewLinkBarPaid', function () {
 			browser.assert.elements(STRPreviewLinkBarPaid, 1);
-		});
+		});	
 	
 	});
 	
