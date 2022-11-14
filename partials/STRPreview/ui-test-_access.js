@@ -7,7 +7,6 @@ Object.entries({
 	STRPreviewLink: '.STRPreviewLink',
 	STRPreviewLink_Example: '.STRPreview:nth-of-type(1) .STRPreviewLink',
 	STRPreviewLinkBarPaid: '.STRPreviewLinkBarPaid',
-	STRPreviewLink_Example: '.STRPreview:nth-of-type(1) .STRPreviewLink',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
