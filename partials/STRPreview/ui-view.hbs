@@ -6,6 +6,10 @@
 
 <a class="STRPreviewLink" href="{{url}}" aria-text="{{title}}" style="background-image: url('{{ feature_image }}');">
 	<div class="STRPreviewLinkBar">
+		{{#has tag="#spotlight"}}
+			<span class="STRPreviewLinkBarSpotlight">SPOTLIGHT</span>
+		{{/has}}
+
 		{{#has visibility="paid"}}
 			<span class="STRPreviewLinkBarPaid"><span aria-hidden>★</span> for members</span>
 		{{/has}}
