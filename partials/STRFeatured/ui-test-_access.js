@@ -7,7 +7,7 @@ Object.entries({
 	return global[e.shift()] = e.pop();
 });
 
-describe('STRFeaturedItem_Access', function () {
+describe('STRFeatured_Access', function () {
 
 	const postCount = 2;
 
