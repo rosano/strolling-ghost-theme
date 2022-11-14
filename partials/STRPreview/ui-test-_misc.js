@@ -20,6 +20,10 @@ describe('STRPreview_Misc', function () {
 
 	describe('STRPreviewLink', function test_STRPreviewLink () {
 
+		it('sets data-number', function () {
+			browser.assert.attribute(STRPreviewLink_Example, 'data-number', '0002');
+		});
+
 		it('sets aria-text', function () {
 			browser.assert.attribute(STRPreviewLink_Example, 'aria-text', 'STRMembersEpisodeTitleText');
 		});

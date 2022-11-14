@@ -4,7 +4,7 @@
 
 <div class="STRPreview">
 
-<a class="STRPreviewLink" href="{{url}}" aria-text="{{title}}" style="background-image: url('{{ feature_image }}');">
+<a class="STRPreviewLink" href="{{url}}" aria-text="{{title}}" style="background-image: url('{{ feature_image }}');" data-number="{{slug}}">
 	<div class="STRPreviewLinkBar">
 		{{#has visibility="paid"}}
 			<span class="STRPreviewLinkBarPaid"><span aria-hidden>★</span> for members</span>
@@ -59,6 +59,10 @@
 	text-decoration: none;
 
 	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .STRPreviewLinkBar {
@@ -77,4 +81,94 @@
 	opacity: 0.7;
 	flex-grow: 1;
 }
+
+.STRPreviewLinkDurationBox {
+	text-align: right;
+	padding: 8px;
+}
+
+.STRPreviewLinkDuration {
+	padding: 3px;
+
+	background: rgba(0, 0, 0, 0.9);
+	color: white;
+	text-shadow: 1px 1px 0 black;
+	font-size: 8pt;
+	border-radius: 3px;
+	position: relative;
+}
 </style>
+
+<script>
+(function() {
+
+const mod = {
+
+	async STRDurationInfoObject (debug) {
+		const _window = debug || window;
+
+		const response = await _window.fetch(mod.STRDurationEndpointURL());
+
+		try {
+			const outputData = await response.json();
+			
+			if (mod.STRDurationInfoIsValid(outputData)) {
+				return outputData;
+			}
+
+			throw new Error('ErrorInputNotValid');
+		} catch {
+			return null;
+		}
+	},
+
+	STRDurationInfoIsValid (inputData) {
+		if (typeof inputData !== 'object' || inputData === null) {
+			throw new Error('OLSKErrorInputNotValid');
+		}
+
+		if (!Array.isArray(inputData)) {
+			return false;
+		}
+
+		return true;
+	},
+
+	STRDurationEndpointURL () {
+		return 'https://api.rosano.ca/strolling';
+	},
+
+	STRDurationLoad (inputData) {
+		Array.from(document.querySelectorAll('.STRPreviewLink')).forEach(function (e) {
+			const target = document.createElement('div');
+			e.appendChild(target);
+			target.outerHTML = `<div class="STRPreviewLinkDurationBox"><time class="STRPreviewLinkDuration" datetime="${ inputData[e.dataset['number']].split(':').map((e, i) => e + (!i ? 'm' : 's')).join(' ') }">${ inputData[e.dataset['number']] }</time></div>`;
+		});
+	},
+
+	// MESSAGE
+
+	async DOMContentLoaded () {
+		const _mod = (typeof process !== 'undefined' && process.env.npm_lifecycle_script === 'olsk-spec') ? this : mod;
+
+		if (typeof window === 'object' && window.origin.match('loc.tests')) {
+			return;
+		}
+
+		_mod.STRDurationLoad((await _mod.STRDurationInfoObject()).pop());
+	},
+
+	// LIFECYCLE
+
+	LifecycleModuleDidLoad (debug) {
+		(debug || window).document.addEventListener('DOMContentLoaded', mod.DOMContentLoaded);
+	},
+
+};
+
+if (typeof window === 'object') {
+	mod.LifecycleModuleDidLoad();
+}
+
+})();
+</script>
