@@ -9,7 +9,7 @@ Object.entries({
 
 describe('STRFeatured_Access', function () {
 
-	const postCount = 2;
+	const postCount = 1;
 
 	before(function() {
 		return browser.visit(kDefaultRoutePath);
