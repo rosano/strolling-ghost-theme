@@ -153,7 +153,7 @@ describe('STRIntro_Misc', function () {
 	describe('STRIntroPlatformsExtraMastodon', function test_STRIntroPlatformsExtraMastodon () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsExtraMastodon, 'href', 'https://merveilles.town/@rosano');
+			browser.assert.attribute(STRIntroPlatformsExtraMastodon, 'href', 'https://mastodon.online/@rosano');
 		});
 
 		it('sets text', function () {
