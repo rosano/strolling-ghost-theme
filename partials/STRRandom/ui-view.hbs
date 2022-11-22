@@ -31,13 +31,14 @@ const mod = {
 
 	_ValueAllVideoIDs: [],
 	_ValuePreviousVideoIDs: [],
+	_ValueCycledVideoIDs: [],
 	_ValueNextVideoIDs: [],
 
 	// DATA
 
 	DataNewVideoID () {
 		return uRandomElement(mod._ValueAllVideoIDs.filter(function (e) {
-			return !mod._ValuePreviousVideoIDs.includes(e);
+			return !mod._ValuePreviousVideoIDs.slice(mod._ValueCycledVideoIDs.length).includes(e);
 		}));
 	},
 
@@ -51,8 +52,8 @@ const mod = {
 		let item = mod.DataNewVideoID();
 
 		if (!item) {
-			mod._ValueNextVideoIDs = uShuffle(mod._ValuePreviousVideoIDs.splice(0));
-			item = mod._ValueNextVideoIDs.pop();
+			mod._ValueCycledVideoIDs.push(...mod._ValuePreviousVideoIDs.slice(mod._ValueCycledVideoIDs.length));
+			item = mod.DataNewVideoID();
 		}
 
 		mod._ValuePreviousVideoIDs.push(item);
@@ -64,13 +65,10 @@ const mod = {
 		mod._ValueNextVideoIDs.push(mod._ValuePreviousVideoIDs.pop());
 
 		mod._CommandLoadVideo(mod._ValuePreviousVideoIDs.slice().pop());
-
-		document.getElementById('videoInfo').innerHTML = "loading previous video...";
 	},
 
 	_CommandLoadVideo (videoId) {
 		document.querySelector('.STRRandomButtonsPrevious').disabled = mod._ValuePreviousVideoIDs.length === 1;
-		document.querySelector('.STRRandomButtonsNext').disabled = !mod.DataNewVideoID();
 		
 		mod._ValuePlayer.loadVideoById({
 			videoId,
