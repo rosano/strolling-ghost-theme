@@ -70,18 +70,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
-	describe('STRIntroPlatformsFeed', function test_STRIntroPlatformsFeed () {
+	describe('STRIntroPlatformsInstagram', function test_STRIntroPlatformsInstagram () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsFeed, 'href', '/podcast.rss');
+			browser.assert.attribute(STRIntroPlatformsInstagram, 'href', '/instagram');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroPlatformsFeed, 'RSS Feed');
+			browser.assert.text(STRIntroPlatformsInstagram, 'Instagram');
 		});
 	
 	});
-
+	
 	describe('STRIntroPlatformsMore', function test_STRIntroPlatformsMore () {
 
 		it('sets text', function () {
@@ -102,18 +102,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
-	describe('STRIntroPlatformsExtraInstagram', function test_STRIntroPlatformsExtraInstagram () {
+	describe('STRIntroPlatformsExtraFeed', function test_STRIntroPlatformsExtraFeed () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsExtraInstagram, 'href', '/instagram');
+			browser.assert.attribute(STRIntroPlatformsExtraFeed, 'href', '/podcast.rss');
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRIntroPlatformsExtraInstagram, 'Instagram');
+			browser.assert.text(STRIntroPlatformsExtraFeed, 'RSS Feed');
 		});
 	
 	});
-	
+
 	describe('STRIntroPlatformsExtraFacebook', function test_STRIntroPlatformsExtraFacebook () {
 
 		it('sets href', function () {

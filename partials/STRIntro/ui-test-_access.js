@@ -8,14 +8,14 @@ Object.entries({
 	STRIntroPlatformsApplePodcasts: '.STRIntroPlatformsApplePodcasts',
 	STRIntroPlatformsSpotify: '.STRIntroPlatformsSpotify',
 	STRIntroPlatformsYouTube: '.STRIntroPlatformsYouTube',
-	STRIntroPlatformsFeed: '.STRIntroPlatformsFeed',
+	STRIntroPlatformsInstagram: '.STRIntroPlatformsInstagram',
 	STRIntroPlatformsMore: '.STRIntroPlatformsMore',
 	STRIntroPlatformsExtra: '.STRIntroPlatformsExtra',
-	STRIntroPlatformsExtraInstagram: '.STRIntroPlatformsExtraInstagram',
 	STRIntroPlatformsExtraFacebook: '.STRIntroPlatformsExtraFacebook',
 	STRIntroPlatformsExtraTwitter: '.STRIntroPlatformsExtraTwitter',
 	STRIntroPlatformsExtraTikTok: '.STRIntroPlatformsExtraTikTok',
 	STRIntroPlatformsExtraMastodon: '.STRIntroPlatformsExtraMastodon',
+	STRIntroPlatformsExtraFeed: '.STRIntroPlatformsExtraFeed',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -54,8 +54,8 @@ describe('STRIntro_Access', function () {
 		browser.assert.elements(STRIntroPlatformsYouTube, 1);
 	});
 	
-	it('shows STRIntroPlatformsFeed', function() {
-		browser.assert.elements(STRIntroPlatformsFeed, 1);
+	it('shows STRIntroPlatformsInstagram', function () {
+		browser.assert.elements(STRIntroPlatformsInstagram, 1);
 	});
 	
 	it('shows STRIntroPlatformsMore', function() {
@@ -66,8 +66,8 @@ describe('STRIntro_Access', function () {
 		browser.assert.elements(STRIntroPlatformsExtra, 1);
 	});
 
-	it('shows STRIntroPlatformsExtraInstagram', function () {
-		browser.assert.elements(STRIntroPlatformsExtraInstagram, 1);
+	it('shows STRIntroPlatformsExtraFeed', function() {
+		browser.assert.elements(STRIntroPlatformsExtraFeed, 1);
 	});
 	
 	it('shows STRIntroPlatformsExtraFacebook', function () {
