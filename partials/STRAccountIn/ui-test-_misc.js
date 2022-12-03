@@ -37,7 +37,7 @@ describe('STRAccountIn_Misc', function () {
 		});
 
 		it('sets text', function () {
-			browser.assert.text(STRAccountDetailsLink, 'Settings');
+			browser.assert.text(STRAccountDetailsLink, 'Your Profile Settings');
 		});
 
 	});
