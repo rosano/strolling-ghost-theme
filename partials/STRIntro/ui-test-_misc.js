@@ -22,30 +22,6 @@ describe('STRIntro_Misc', function () {
 	
 	});
 
-	describe('STRIntroPlatformsPocketCasts', function test_STRIntroPlatformsPocketCasts () {
-
-		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsPocketCasts, 'href', '/pcast');
-		});
-
-		it('sets text', function () {
-			browser.assert.text(STRIntroPlatformsPocketCasts, 'Pocket Casts');
-		});
-	
-	});
-
-	describe('STRIntroPlatformsApplePodcasts', function test_STRIntroPlatformsApplePodcasts () {
-
-		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsApplePodcasts, 'href', '/apple');
-		});
-
-		it('sets text', function () {
-			browser.assert.text(STRIntroPlatformsApplePodcasts, 'Apple Podcasts');
-		});
-	
-	});
-
 	describe('STRIntroPlatformsSpotify', function test_STRIntroPlatformsSpotify () {
 
 		it('sets href', function () {
@@ -78,6 +54,30 @@ describe('STRIntro_Misc', function () {
 
 		it('sets text', function () {
 			browser.assert.text(STRIntroPlatformsInstagram, 'Instagram');
+		});
+	
+	});
+
+	describe('STRIntroPlatformsPocketCasts', function test_STRIntroPlatformsPocketCasts () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsPocketCasts, 'href', '/pcast');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsPocketCasts, 'Pocket Casts');
+		});
+	
+	});
+
+	describe('STRIntroPlatformsApplePodcasts', function test_STRIntroPlatformsApplePodcasts () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsApplePodcasts, 'href', '/apple');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsApplePodcasts, 'Apple Podcasts');
 		});
 	
 	});
