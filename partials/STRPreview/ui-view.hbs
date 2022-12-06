@@ -140,9 +140,15 @@ const mod = {
 
 	STRDurationLoad (inputData) {
 		Array.from(document.querySelectorAll('.STRPreviewLink')).forEach(function (e) {
+			const match = inputData[e.dataset['number']];
+
+			if (!match) {
+				return;
+			}
+			
 			const target = document.createElement('div');
 			e.appendChild(target);
-			target.outerHTML = `<div class="STRPreviewLinkDurationBox"><time class="STRPreviewLinkDuration" datetime="${ inputData[e.dataset['number']].split(':').map((e, i) => e + (!i ? 'm' : 's')).join(' ') }">${ inputData[e.dataset['number']] }</time></div>`;
+			target.outerHTML = `<div class="STRPreviewLinkDurationBox"><time class="STRPreviewLinkDuration" datetime="${ match.split(':').map((e, i) => e + (!i ? 'm' : 's')).join(' ') }">${ inputData[e.dataset['number']] }</time></div>`;
 		});
 	},
 
