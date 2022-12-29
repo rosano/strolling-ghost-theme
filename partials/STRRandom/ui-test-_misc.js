@@ -17,7 +17,7 @@ describe('STRRandom_Misc', function () {
 	describe('STRRandomEmbed', function test_STRRandomEmbed () {
 
 		it('sets src', function () {
-			browser.assert.attribute(STRRandomEmbed, 'src', 'https://www.youtube-nocookie.com/embed/videoseries?rel=0&enablejsapi=1&list=PL6v1zwoKiosMCiOTjwHG63nwuSAP_clUI');
+			browser.assert.attribute(STRRandomEmbed, 'src', 'https://www.youtube-nocookie.com/embed/videoseries?rel=0&enablejsapi=1&list=PL6v1zwoKiosMCiOTjwHG63nwuSAP_clUI&modestbranding=1');
 		});
 
 	});
