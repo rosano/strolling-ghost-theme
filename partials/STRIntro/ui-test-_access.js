@@ -12,6 +12,7 @@ Object.entries({
 	STRIntroPlatformsMore: '.STRIntroPlatformsMore',
 	STRIntroPlatformsExtra: '.STRIntroPlatformsExtra',
 	STRIntroPlatformsExtraFacebook: '.STRIntroPlatformsExtraFacebook',
+	STRIntroPlatformsExtraTelegram: '.STRIntroPlatformsExtraTelegram',
 	STRIntroPlatformsExtraTwitter: '.STRIntroPlatformsExtraTwitter',
 	STRIntroPlatformsExtraTikTok: '.STRIntroPlatformsExtraTikTok',
 	STRIntroPlatformsExtraMastodon: '.STRIntroPlatformsExtraMastodon',
@@ -72,6 +73,10 @@ describe('STRIntro_Access', function () {
 	
 	it('shows STRIntroPlatformsExtraFacebook', function () {
 		browser.assert.elements(STRIntroPlatformsExtraFacebook, 1);
+	});
+	
+	it('shows STRIntroPlatformsExtraTelegram', function () {
+		browser.assert.elements(STRIntroPlatformsExtraTelegram, 1);
 	});
 	
 	it('shows STRIntroPlatformsExtraTwitter', function () {

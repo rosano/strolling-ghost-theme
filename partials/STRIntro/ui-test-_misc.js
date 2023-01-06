@@ -126,6 +126,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 	
+	describe('STRIntroPlatformsExtraTelegram', function test_STRIntroPlatformsExtraTelegram () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraTelegram, 'href', '/telegram');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraTelegram, 'Telegram');
+		});
+	
+	});
+	
 	describe('STRIntroPlatformsExtraTwitter', function test_STRIntroPlatformsExtraTwitter () {
 
 		it('sets href', function () {
