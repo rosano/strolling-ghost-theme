@@ -1,5 +1,8 @@
 {
-    "name": "STRTheme",
+    "name": "strolling-theme",
+    "author": {
+        "email": "ghost@phileplanet.com"
+    },
     "version": "1.0.0",
     "config": {
         "posts_per_page": 20
