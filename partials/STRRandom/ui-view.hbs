@@ -1,5 +1,8 @@
 <div class="STRRandom">
 
+{{#is "page"}}
+
+{{#post}}
 <h1 class="STRRandomHeading">have a quick taste <span aria-hidden="true">📺👁👂🏼<span></h1>
 
 <div class="STRRandomPlayer">
@@ -9,6 +12,14 @@
 	<button class="STRRandomButtonsPrevious OLSKDecorPressCall" onclick="mod.CommandPreviousVideo()" disabled>previous</button>
 	<button class="STRRandomButtonsNext OLSKDecorPressCall" onclick="mod.CommandNextVideo()">new snippet</button>
 </section>
+
+{{#has slug="tv"}}
+<meta name="tv" content="true" />
+{{/has}}
+
+{{/post}}
+
+{{/is}}
 
 </div>
 
@@ -33,6 +44,8 @@ const mod = {
 	_ValuePreviousVideoIDs: [],
 	_ValueCycledVideoIDs: [],
 	_ValueNextVideoIDs: [],
+	_ValueAutoplay: !!document.querySelector('meta[name="tv"]') || false,
+	_ValueDidPlay: false,
 
 	// DATA
 
@@ -69,7 +82,15 @@ const mod = {
 
 	_CommandLoadVideo (videoId) {
 		document.querySelector('.STRRandomButtonsPrevious').disabled = mod._ValuePreviousVideoIDs.length === 1;
-		
+
+		if (!mod._ValueAutoplay && !mod._ValueDidPlay) {
+			mod._ValueDidPlay = true;
+
+			return mod._ValuePlayer.cueVideoById({
+				videoId,
+			});
+		}
+
 		mod._ValuePlayer.loadVideoById({
 			videoId,
 		});
