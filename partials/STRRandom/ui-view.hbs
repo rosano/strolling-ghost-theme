@@ -1,163 +1,19 @@
 <div class="STRRandom">
 
-{{#is "page"}}
+<div id="STRRandomTube"></div>
 
-{{#post}}
-<h1 class="STRRandomHeading">have a quick taste <span aria-hidden="true">📺👁👂🏼<span></h1>
-
-<div class="STRRandomPlayer">
-<iframe class="STRRandomEmbed" id="youtube-player" src="https://www.youtube-nocookie.com/embed/videoseries?rel=0&amp;enablejsapi=1&amp;list=PL6v1zwoKiosMCiOTjwHG63nwuSAP_clUI&amp;modestbranding=1{{#has slug="tv"}}&amp;autoplay=1{{/has}}" width="100%" height="300" frameborder="0" allow="accelerometer; {{#has slug="tv"}}autoplay; {{/has}}clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<section class="STRRandomButtons">
-	<button class="STRRandomButtonsPrevious OLSKDecorPressCall" onclick="mod.CommandPreviousVideo()" disabled>previous</button>
-	<button class="STRRandomButtonsNext OLSKDecorPressCall" onclick="mod.CommandNextVideo()">new snippet</button>
-</section>
-
-{{#has slug="tv"}}
-<meta name="tv" content="true" />
-{{/has}}
-
-{{/post}}
-
-{{/is}}
+<script type="text/javascript">
+OLSKTube.OLSKTubeLoad({
+	ParamParent: window.STRRandomTube,
+	ParamPlaylist: 'PL6v1zwoKiosMCiOTjwHG63nwuSAP_clUI',
+	ParamAutoplay: !!`{{#is "page"}}{{#post}}{{#has slug="tv"}}true{{/has}}{{/post}}{{/is}}` || false,
+});
+</script>
 
 </div>
 
-<script type="text/javascript">
-const uRandomElement = function () {
-	const array = [].concat(...arguments);
-	return array[Date.now() % array.length];
-};
-
-const uShuffle = function (inputData) {
-  return inputData
-    .map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
-};
-
-const mod = {
-
-	// VALUE
-
-	_ValueAllVideoIDs: [],
-	_ValuePreviousVideoIDs: [],
-	_ValueCycledVideoIDs: [],
-	_ValueNextVideoIDs: [],
-	_ValueAutoplay: !!document.querySelector('meta[name="tv"]') || false,
-	_ValueDidPlay: false,
-
-	// DATA
-
-	DataNewVideoID () {
-		return uRandomElement(mod._ValueAllVideoIDs.filter(function (e) {
-			return !mod._ValuePreviousVideoIDs.slice(mod._ValueCycledVideoIDs.length).includes(e);
-		}));
-	},
-
-	// COMMAND
-
-	CommandNextVideo () {
-		if (mod._ValueNextVideoIDs.length) {
-			return mod._CommandLoadVideo(mod._ValueNextVideoIDs.pop());
-		}
-
-		let item = mod.DataNewVideoID();
-
-		if (!item) {
-			mod._ValueCycledVideoIDs.push(...mod._ValuePreviousVideoIDs.slice(mod._ValueCycledVideoIDs.length));
-			item = mod.DataNewVideoID();
-		}
-
-		mod._ValuePreviousVideoIDs.push(item);
-
-		mod._CommandLoadVideo(item);
-	},
-
-	CommandPreviousVideo () {
-		mod._ValueNextVideoIDs.push(mod._ValuePreviousVideoIDs.pop());
-
-		mod._CommandLoadVideo(mod._ValuePreviousVideoIDs.slice().pop());
-	},
-
-	_CommandLoadVideo (videoId) {
-		document.querySelector('.STRRandomButtonsPrevious').disabled = mod._ValuePreviousVideoIDs.length === 1;
-
-		if (!mod._ValueAutoplay && !mod._ValueDidPlay) {
-			mod._ValueDidPlay = true;
-
-			return mod._ValuePlayer.cueVideoById({
-				videoId,
-			});
-		}
-
-		mod._ValuePlayer.loadVideoById({
-			videoId,
-		});
-	},
-
-	// MESSAGE
-
-	MessageYouTubeAPIReady () {
-		mod._ValuePlayer = new YT.Player('youtube-player', {
-			events: {
-				onReady () {
-					if (mod._ValueAllVideoIDs.length) {
-						return;
-					}
-					
-					mod._ValueAllVideoIDs = mod._ValuePlayer.getPlaylist();
-
-					mod.CommandNextVideo();
-
-					// mod._ValuePlayer.loadPlaylist(uShuffle(mod._ValueAllVideoIDs));
-
-					// window.setTimeout(function () {
-					// 	mod._ValuePlayer.loadPlaylist(uShuffle(mod._ValueAllVideoIDs));
-					// }, 3000);
-				},
-
-				onStateChange (event) {
-					if (event.data == YT.PlayerState.ENDED) {
-						return mod.CommandNextVideo();
-					}
-				},
-			},
-		});
-	},
-
-	// SETUP
-
-	SetupEverything() {
-		const tag = document.createElement('script');
-		tag.src = 'https://www.youtube.com/iframe_api';
-		const firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-	},
-
-	// LIFECYCLE
-
-	LifecycleModuleDidLoad() {
-		if (typeof window !== 'undefined' && window.location.hostname === 'loc.tests') {
-			return;
-		}
-
-		mod.SetupEverything();
-	},
-
-};
-
-mod.LifecycleModuleDidLoad();
-
-window.onYouTubeIframeAPIReady = mod.MessageYouTubeAPIReady;
-</script>
-
 <style>
-.STRRandom {
-	text-align: center;
-}
-
-.STRRandomEmbed {
+.OLSKTubeEmbed {
 	display: block;
 	border: 10px solid #ff76ad;
 	border-radius: 10px;
@@ -165,7 +21,7 @@ window.onYouTubeIframeAPIReady = mod.MessageYouTubeAPIReady;
 
 @media (min-width: 750px) {
 
-	.STRRandomEmbed {
+	.OLSKTubeEmbed {
 		width: 120%;
 		height: 480px;
 		position: relative;
@@ -174,42 +30,10 @@ window.onYouTubeIframeAPIReady = mod.MessageYouTubeAPIReady;
 
 }
 
-@media (max-width: 450px) {
-
-	.STRRandomEmbed {
-		width: 100%;
-		height: 250px;
-
-		border: 0;
-	}
-
-}
-
-.STRRandomButtons {
-	display: flex;
-	width: 100%;
-}
-
-.STRRandomButtons button {
-	height: 40px;
-	margin: 10px;
-	flex-grow: 1;
+.OLSKTubeButtons button {
 	background: #ff76ad !important;
 	border-color: black !important;
 	color: black !important;
-	border-radius: var(--OLSKBorderRadius);
-}
-
-@media (max-width: 200px) {
-
-	.STRRandomButtons button {
-		height: 28px;
-		padding: 0;
-		margin: 4px;
-		
-		font-size: 70%;
-	}
-
 }
 </style>
 
