@@ -9,7 +9,7 @@ describe('STRBelow_Misc', function () {
 	describe('STRBelowEdit', function test_STRBelowEdit () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRBelowEdit, 'href', 'https://github.com/strollingpodcast/STRTheme');
+			browser.assert.attribute(STRBelowEdit, 'href', 'https://github.com/rosano/strolling-ghost-theme');
 		});
 
 		it('sets target', function () {
