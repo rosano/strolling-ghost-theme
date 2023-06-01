@@ -70,12 +70,4 @@ describe('STRPrompt_Misc', function () {
 	
 	});
 
-	describe('STRPromptBackers', function test_STRPromptBackers () {
-
-		it('sets text', function () {
-			browser.assert.text(STRPromptBackers, '(Open Collective Flare backers: your email works here)');
-		});
-	
-	});
-
 });

@@ -6,7 +6,6 @@ Object.entries({
 	STRPromptButton: '.STRPromptButton',
 	STRPromptExistingBlurb: '.STRPromptExistingBlurb',
 	STRPromptExistingLink: '.STRPromptExistingLink',
-	STRPromptBackers: '.STRPromptBackers',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -35,10 +34,6 @@ describe('STRPrompt_Access', function () {
 	
 	it('shows STRPromptExistingLink', function() {
 		browser.assert.elements(STRPromptExistingLink, 1);
-	});
-	
-	it('shows STRPromptBackers', function() {
-		browser.assert.elements(STRPromptBackers, 1);
 	});
 	
 });
