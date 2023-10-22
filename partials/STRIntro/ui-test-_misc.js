@@ -138,6 +138,18 @@ describe('STRIntro_Misc', function () {
 	
 	});
 	
+	describe('STRIntroPlatformsExtraWhatsapp', function test_STRIntroPlatformsExtraWhatsapp () {
+
+		it('sets href', function () {
+			browser.assert.attribute(STRIntroPlatformsExtraWhatsapp, 'href', '/whatsapp');
+		});
+
+		it('sets text', function () {
+			browser.assert.text(STRIntroPlatformsExtraWhatsapp, 'WhatsApp');
+		});
+	
+	});
+	
 	describe('STRIntroPlatformsExtraTwitter', function test_STRIntroPlatformsExtraTwitter () {
 
 		it('sets href', function () {
