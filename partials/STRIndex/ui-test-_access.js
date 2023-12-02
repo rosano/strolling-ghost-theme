@@ -12,7 +12,7 @@ describe('STRIndex_Access', function () {
 	const postCount = 2;
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRIndex', function() {

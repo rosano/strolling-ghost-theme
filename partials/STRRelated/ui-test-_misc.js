@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/strcontent';
 describe('STRRelated_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRRelatedHeading', function test_STRRelatedHeading () {

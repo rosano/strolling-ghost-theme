@@ -10,7 +10,7 @@ Object.entries({
 describe('STRRandom_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRRandom', function() {

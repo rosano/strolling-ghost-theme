@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/0000/';
 describe('STREpisode_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STREpisodeAll', function test_STREpisodeAll () {

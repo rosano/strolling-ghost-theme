@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STRBelow_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRBelowEdit', function test_STRBelowEdit () {

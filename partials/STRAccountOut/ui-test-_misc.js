@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STRAccountOut_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRAccountOut', function test_STRAccountOut () {

@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STRAbove_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRAboveCrown', function test_STRAboveCrown () {

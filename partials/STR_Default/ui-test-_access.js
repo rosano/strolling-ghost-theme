@@ -9,7 +9,7 @@ Object.entries({
 describe('STR_Default_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STR_Default', function() {

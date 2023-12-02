@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/strgeneric/';
 describe('STRGeneric_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRGenericTitle', function test_STRGenericTitle () {

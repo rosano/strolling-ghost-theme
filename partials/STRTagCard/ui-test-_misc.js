@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/0000/';
 describe('STRTagCard_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRTagCard', function test_STRTagCard () {

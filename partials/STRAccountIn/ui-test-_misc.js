@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/straccountin/';
 describe('STRAccountIn_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRAccountIn', function test_STRAccountIn () {

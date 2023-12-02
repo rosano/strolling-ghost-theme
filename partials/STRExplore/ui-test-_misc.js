@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STRExplore_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRExploreHeading', function test_STRExploreHeading () {

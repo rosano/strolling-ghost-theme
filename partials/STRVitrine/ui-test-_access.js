@@ -9,7 +9,7 @@ Object.entries({
 describe('STRVitrine_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRVitrine', function() {

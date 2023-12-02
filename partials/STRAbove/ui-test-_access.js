@@ -13,7 +13,7 @@ Object.entries({
 describe('STRAbove_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRAbove', function() {

@@ -12,7 +12,7 @@ describe('STRFeatured_Access', function () {
 	const postCount = 1;
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	it('shows STRFeatured', function () {

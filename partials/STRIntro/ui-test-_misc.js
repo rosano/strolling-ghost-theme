@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STRIntro_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRIntro', function test_STRIntro () {

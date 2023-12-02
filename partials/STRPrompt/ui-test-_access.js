@@ -13,7 +13,7 @@ Object.entries({
 describe('STRPrompt_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRPrompt', function() {

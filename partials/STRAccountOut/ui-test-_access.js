@@ -11,7 +11,7 @@ Object.entries({
 describe('STRAccountOut_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRAccountOut', function() {

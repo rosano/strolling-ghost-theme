@@ -25,7 +25,7 @@ Object.entries({
 describe('STRIntro_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRIntro', function() {

@@ -11,7 +11,7 @@ Object.entries({
 describe('STRGeneric_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRGeneric', function() {

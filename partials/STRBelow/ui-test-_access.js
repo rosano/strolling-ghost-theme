@@ -14,7 +14,7 @@ Object.entries({
 describe('STRBelow_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STRBelow', function() {

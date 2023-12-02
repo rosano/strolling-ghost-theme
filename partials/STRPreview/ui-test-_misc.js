@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/tag/strtag/';
 describe('STRPreview_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRPreviewLinkBarDate', function test_STRPreviewLinkBarDate () {

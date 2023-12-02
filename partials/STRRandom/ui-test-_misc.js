@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STRRandom_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRRandomHeading', function test_STRRandomHeading () {

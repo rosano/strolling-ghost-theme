@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/STRPrompt';
 describe('STRPrompt_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRPrompt', function test_STRPrompt () {

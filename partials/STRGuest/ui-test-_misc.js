@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/guests/';
 describe('STRGuest_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STRGuestHeading', function test_STRGuestHeading () {

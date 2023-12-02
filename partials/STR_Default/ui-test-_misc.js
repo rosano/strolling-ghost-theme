@@ -3,7 +3,7 @@ const kDefaultRoutePath = '/';
 describe('STR_Default_Misc', function () {
 
 	before(function () {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 
 	describe('STR_Default', function test_STR_Default () {
@@ -19,7 +19,7 @@ describe('STR_Default_Misc', function () {
 		context('STR_DefaultTwitterPlayerCard', function () {
 			
 			before(function () {
-				return browser.visit('/0000/');
+				return browser.OLSKVisitPath('/0000/');
 			});
 
 			it.skip('sets meta[name="twitter:card"]', function () {

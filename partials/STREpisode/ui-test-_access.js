@@ -12,7 +12,7 @@ Object.entries({
 describe('STREpisode_Access', function () {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.OLSKVisitPath(kDefaultRoutePath);
 	});
 	
 	it('shows STREpisode', function() {
