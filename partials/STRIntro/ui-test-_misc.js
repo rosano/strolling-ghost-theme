@@ -153,7 +153,7 @@ describe('STRIntro_Misc', function () {
 	describe('STRIntroPlatformsExtraTwitter', function test_STRIntroPlatformsExtraTwitter () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsExtraTwitter, 'href', 'https://twitter.com/rosano');
+			browser.assert.attribute(STRIntroPlatformsExtraTwitter, 'href', 'https://rosano.ca/twitter');
 		});
 
 		it('sets text', function () {
@@ -177,7 +177,7 @@ describe('STRIntro_Misc', function () {
 	describe('STRIntroPlatformsExtraMastodon', function test_STRIntroPlatformsExtraMastodon () {
 
 		it('sets href', function () {
-			browser.assert.attribute(STRIntroPlatformsExtraMastodon, 'href', 'https://mastodon.online/@rosano');
+			browser.assert.attribute(STRIntroPlatformsExtraMastodon, 'href', 'https://rosano.ca/mastodon');
 		});
 
 		it('sets text', function () {
