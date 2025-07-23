@@ -38,6 +38,10 @@ describe('STRGuest_Access', function () {
 		browser.assert.elements('.STRGuestLink[href="/tag/moos/"]', 0);
 	});
 
+	it('hides capoeira', function () {
+		browser.assert.elements('.STRGuestLink[href="/tag/capoeira/"]', 0);
+	});
+
 	it('hides money', function () {
 		browser.assert.elements('.STRGuestLink[href="/tag/money/"]', 0);
 	});
