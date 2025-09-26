@@ -8,9 +8,11 @@
 
 {{#foreach tags}}
 
+{{#match name "~^" "in "}}{{else}}
 <a class="STRGuestLink" href="{{url}}" aria-text="{{name}}" style="background-image: url('{{ feature_image }}');">
 	<div class="STRGuestLinkName">{{ name }}</div>
 </a>
+{{/match}}
 
 {{/foreach}}
 
